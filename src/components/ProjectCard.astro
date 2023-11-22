@@ -9,21 +9,28 @@ const { title, description, link } = Astro.props as Props;
 ---
 
 
-<div>
-    <p class="title">{ title }</p>
-    <p class="description">{ description }</p>
+<div class="container">
+    <div>
+        <p class="title">{ title }</p>
+        <p class="description">{ description }</p>
+    </div>
+    
     <a class="link" href={ link } target="_blank">Repository</a>
 </div>
 
 <style>
-    div {
+    .container {
         background-color: #1d1f26;
-        /* width: 80%; */
         margin: 0;
         border: solid white;
         border-radius: 10px;
         border-width: 0.1em;
         padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
     }
     
     .title {
@@ -32,7 +39,6 @@ const { title, description, link } = Astro.props as Props;
         margin-bottom: 0;
     }
     .description {
-        width: 50%;
         margin: 1em 0;
         font-size: 1.25rem;
     }
