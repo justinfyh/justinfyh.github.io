@@ -1,6 +1,7 @@
 ---
 import linkedin from '../images/linkedin.png'
 import github from '../images/github.png'
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <header class="header">
@@ -16,6 +17,9 @@ import github from '../images/github.png'
                 </li>
                 <li>
                     <a href="https://github.com/justinfyh" target="_blank"><img src={github.src} alt=""></a>
+                </li>
+                <li>
+                    <ThemeIcon />
                 </li>
             </ul>
         </nav>
@@ -42,24 +46,18 @@ import github from '../images/github.png'
 
     .header nav ul li {
         list-style-type: none;
-    }
-
-    .header nav ul li a {
         padding: 0 1em;
+
     }
 
     .header nav ul li a img {
         height: 25px;
         margin-top: 2px;
-        transition: background-color 0.2s ease-in-out;
-    }
-
-    .header nav ul li a img:hover {
-        background-color: rgb(var(--accent));
+        filter: var(--image-filter);
     }
 
     .logo a {
-        color: white;
+        color: var(--text);
         font-weight: 600;
         font-size: 1.2rem;
         text-decoration: none;
