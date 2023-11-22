@@ -2,14 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import Introduction from '../components/Introduction.astro';
+import Portfolio from '../components/Portfolio.astro'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 
 		<Introduction />
-		
-		<h1><span class="text-gradient">Portfolio</span></h1>
+
+		<Portfolio />
 		
 		<ProjectCard title='quick draw' 
 			description='Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing'
@@ -32,18 +33,5 @@ import Introduction from '../components/Introduction.astro';
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	h1 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		line-height: 1;
-		margin-left: 10%;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
+	
 </style>
