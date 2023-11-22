@@ -13,21 +13,23 @@ import Portfolio from '../components/Portfolio.astro'
 
 		<Portfolio />
 		
-		<ProjectCard 
-			title='portfolio website' 
-			description='This webpage :)'
-			link='https://github.com/justinfyh/justinfyh.github.io'/>
-		<ProjectCard 
-			title='mobile store' 
-			description='Mobile application store that allows users to login, browse pc components and add items to a cart'
-			link='https://github.com/justinfyh/blackjack-game'/>
-		<ProjectCard title='quick draw' 
-			description='Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing'
-			link='https://github.com/justinfyh/quick-draw'/>
-		<ProjectCard 
-			title='blackjack' 
-			description='Allows the user to play blackjack against a bot, with different options for different strategies to play against'
-			link='https://github.com/justinfyh/blackjack-game'/>
+		<div class="grid-container">
+			<ProjectCard 
+				title='portfolio website' 
+				description='This webpage :)'
+				link='https://github.com/justinfyh/justinfyh.github.io'/>
+			<ProjectCard 
+				title='mobile store' 
+				description='Mobile application store that allows users to login, browse pc components and add items to a cart'
+				link='https://github.com/justinfyh/blackjack-game'/>
+			<ProjectCard title='quick draw' 
+				description='Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing'
+				link='https://github.com/justinfyh/quick-draw'/>
+			<ProjectCard 
+				title='blackjack' 
+				description='Allows the user to play blackjack against a bot, with different options for different strategies to play against'
+				link='https://github.com/justinfyh/blackjack-game'/>
+		</div>
 		
 
 	</main>
@@ -43,5 +45,13 @@ import Portfolio from '../components/Portfolio.astro'
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	
+
+	.grid-container {
+		margin: 1em auto;
+		width: 80%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+  		grid-gap: 1em;
+		grid-row-gap: 1em;
+	}
 </style>
