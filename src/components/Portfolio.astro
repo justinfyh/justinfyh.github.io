@@ -1,22 +1,21 @@
-<div>
+<div class="container">
     <h1><span class="text-gradient">Portfolio</span></h1>
-    <p>some projects i'm working/worked on</p>
+    <p>some projects I'm working/worked on</p>
 </div>
 
 <style>
-    div {
-        display: flex;
-        align-items: flex-end;
+    .container {
 		margin-left: 10%;
         margin-bottom: 0;
     }
-    h1 {
-		font-size: 2.75rem;
-		font-weight: 700;
-		line-height: 1;
-        margin-right: 0.5em;
-        margin-bottom: 0;
-	}
+    
+    @media(min-width: 680px) {
+        .container {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -25,7 +24,13 @@
 		background-position: 0%;
 	}
 
-    p {
+    h1 {
+        margin-right: 0.5em;
         margin-bottom: 0;
+    }    
+    p {
+        margin-top: 0;
+        margin-bottom: 0.6em;
+        white-space: normal;
     }
 </style>
