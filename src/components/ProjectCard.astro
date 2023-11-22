@@ -12,7 +12,7 @@ const { title, description, link } = Astro.props as Props;
 <div>
     <p class="title">{ title }</p>
     <p class="description">{ description }</p>
-    <a class="link" href={ link }>Repository</a>
+    <a class="link" href={ link } target="_blank">Repository</a>
 </div>
 
 <style>
@@ -22,24 +22,35 @@ const { title, description, link } = Astro.props as Props;
         margin: 2em auto;
         border: solid white;
         border-radius: 10px;
-        border-width: 2px;
+        border-width: 0.1em;
         padding: 2em;
     }
     
     .title {
-        font-size: 1.5em;
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .description {
-
+        width: 50%;
+        margin: 1em 0;
     }
+
     .link {
         border: solid rgb(var(--accent));
-        border-radius: 20px;
-        border-width: 2px;
-        padding: 0.7em 1.2em;
-        font-size: 0.7em;
+        border-radius: 10px;
+        border-width: 0.12em;
+        padding: 0.65em 1.5em;
+        font-size: 1.25rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 1em;
+        display: inline-block;
     }
     .link:hover {
         cursor: pointer;
+        background-color: rgb(var(--accent));
+        color: black;
     }
 </style>

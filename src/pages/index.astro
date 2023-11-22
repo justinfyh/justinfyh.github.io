@@ -5,13 +5,15 @@ import ProjectCard from '../components/ProjectCard.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		
 		<h1><span class="text-gradient">Projects</span></h1>
 		
-		<ProjectCard title='(mobile application)' description=''/>
+		<ProjectCard title='quick draw' 
+			description='Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing'
+			link='https://github.com/justinfyh/quick-draw'/>
 		<ProjectCard 
-			title='(blackjack)' 
-			description='Allows a user to play blackjack against the computer'/>
+			title='blackjack' 
+			description='Allows the user to play blackjack against a bot, with different options for different strategies to play against'
+			link='https://github.com/justinfyh/blackjack-game'/>
 
 	</main>
 </Layout>
