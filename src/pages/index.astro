@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import Introduction from '../components/Introduction.astro';
 import Portfolio from '../components/Portfolio.astro'
+
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,9 +14,17 @@ import Portfolio from '../components/Portfolio.astro'
 
 		<Portfolio />
 		
+		<ProjectCard 
+			title='portfolio website' 
+			description='This webpage :)'
+			link='https://github.com/justinfyh/blackjack-game'/>
 		<ProjectCard title='quick draw' 
 			description='Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing'
 			link='https://github.com/justinfyh/quick-draw'/>
+		<ProjectCard 
+			title='blackjack' 
+			description='Allows the user to play blackjack against a bot, with different options for different strategies to play against'
+			link='https://github.com/justinfyh/blackjack-game'/>
 		<ProjectCard 
 			title='blackjack' 
 			description='Allows the user to play blackjack against a bot, with different options for different strategies to play against'
