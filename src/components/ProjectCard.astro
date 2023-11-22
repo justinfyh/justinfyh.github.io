@@ -22,7 +22,7 @@ const { title, description, link } = Astro.props as Props;
     .container {
         background-color: var(--secondary);
         margin: 0;
-        border: solid white;
+        /* border: solid white; */
         border-radius: 10px;
         border-width: 0.1em;
         padding: 2em 1.2em;
@@ -45,11 +45,11 @@ const { title, description, link } = Astro.props as Props;
 
     .link {
         border: solid rgb(var(--accent));
-        border-radius: 10px;
+        border-radius: 60px;
         border-width: 0.12em;
         padding: 0.6em 1.4em;
         font-size: 1.1rem;
-        color: var(--text);
+        color: rgb(var(--accent));
         text-decoration: none;
         font-weight: 500;
         margin-top: 1em;
@@ -59,6 +59,6 @@ const { title, description, link } = Astro.props as Props;
     .link:hover {
         cursor: pointer;
         background-color: rgb(var(--accent));
-        color: black;
+        color: var(--secondary);
     }
 </style>
