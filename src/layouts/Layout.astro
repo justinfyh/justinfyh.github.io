@@ -34,10 +34,22 @@ const { title } = Astro.props;
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
+
+		--green-accent: 40, 167, 69;       
+		--green-accent-light: 144, 238, 144;  
+		--green-accent-dark: 0, 100, 0;     
+		--green-accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--green-accent)),
+			rgb(var(--green-accent-light)) 30%,
+			white 60%
+		);
+
+		--dark: #13151a;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: var(--dark);
 		background-size: 224px;
 	}
 	code {

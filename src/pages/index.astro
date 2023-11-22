@@ -1,12 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		
-		<!-- <h1>Welcome to <span class="text-gradient">Portfolio</span></h1> -->
+		<h1><span class="text-gradient">Projects</span></h1>
 		
+		<ProjectCard title='project one' />
+		<ProjectCard title='project two' />
+
 	</main>
 </Layout>
 
@@ -14,14 +18,14 @@ import Layout from '../layouts/Layout.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		width: auto;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 2.5rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
