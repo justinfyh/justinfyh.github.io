@@ -1,0 +1,62 @@
+---
+import linkedin from '../images/linkedin.png'
+import github from '../images/github.png'
+---
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">portfolio (justin huang)</a>
+        </div>
+        <nav>
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li>
+                    <a href="https://www.linkedin.com/in/justinfyh/" target="_blank"><img src={linkedin.src} alt=""></a>
+                </li>
+                <li>
+                    <a href="https://github.com/justinfyh" target="_blank"><img src={github.src} alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    .header {
+        height: 4em;
+        background-color: rgb(var(--accent-dark));
+    }
+
+    .header .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .header nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .header nav ul li {
+        list-style-type: none;
+    }
+
+    .header nav ul li a {
+        padding: 0 1em;
+    }
+
+    .header nav ul li a img {
+        height: 25px;
+        margin-top: 2px;
+    }
+
+    a {
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+    }
+</style>
