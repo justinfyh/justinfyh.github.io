@@ -34,7 +34,7 @@ import Footer from '../components/Footer.astro';
 			white 60%
 		);
 
-		--main: #f3f6ff;
+		--main: #f0f0f0;
 		--secondary: white;
 		--text: black;
 		--image-filter: invert(100%);
@@ -50,23 +50,23 @@ import Footer from '../components/Footer.astro';
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
-
 		
 		--main: #13151a;
 		--secondary: #1d1f26;
 		--text: white;
 		--image-filter: unset;
-		margin: 0;
 	}
+
 	html {
 		font-family: system-ui, sans-serif;
 		background: var(--main);
-		background-size: 224px;
+		transition: background 0.2s ease-in-out;
+		/* background-size: 224px; */
 	}
 	html.dark {
-		/* background-color: white; */
 		color: white;
 	}
+
 	code {
 		font-family:
 			Menlo,
@@ -78,6 +78,7 @@ import Footer from '../components/Footer.astro';
 			Courier New,
 			monospace;
 	}
+
 	body {
 		margin: 0;
 		font-family: 'Lato', sans-serif;
