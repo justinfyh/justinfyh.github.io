@@ -2,6 +2,7 @@
 import linkedin from '../images/linkedin.png'
 import github from '../images/github.png'
 import ThemeIcon from './ThemeIcon.astro';
+import Hamburger from './Hamburger.astro'
 ---
 
 <header class="header">
@@ -9,8 +10,8 @@ import ThemeIcon from './ThemeIcon.astro';
         <div class="logo">
             <a href="index.html">justin huang</a>
         </div>
-        <nav>
-            <ul>
+        <nav >
+            <ul class="nav-links">
                 <!-- <li><a href="index.html">Home</a></li> -->
                 <li>
                     <a href="https://www.linkedin.com/in/justinfyh/" target="_blank"><img src={linkedin.src} alt=""></a>
@@ -21,7 +22,11 @@ import ThemeIcon from './ThemeIcon.astro';
                 <li>
                     <ThemeIcon />
                 </li>
+                <li>
+                    
+                </li>
             </ul>
+            <Hamburger />
         </nav>
     </div>
 </header>
@@ -39,8 +44,13 @@ import ThemeIcon from './ThemeIcon.astro';
         padding: 0 10%;
     }
 
-    .header nav ul {
+    .header nav {
         display: flex;
+        align-items: center;
+    }
+
+    .header nav ul {
+        /* display: flex; */
         align-items: center;
     }
 
@@ -56,10 +66,38 @@ import ThemeIcon from './ThemeIcon.astro';
         filter: var(--image-filter);
     }
 
+    .nav-links {
+        display: none;
+    }
+
+    .expanded {
+        display: flex;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+
     .logo a {
         color: var(--text);
         font-weight: 600;
         font-size: 1.2rem;
         text-decoration: none;
     }
+
+    @media screen and (min-width: 470px) {
+        .nav-links {
+            display: flex;
+            margin-right: -50px;
+        }
+
+        .hidden {
+            visibility: unset;
+        }
+    }
 </style>
+
+<script>
+    import '../scripts/menu.js'
+</script>
