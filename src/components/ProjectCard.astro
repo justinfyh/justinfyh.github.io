@@ -12,9 +12,14 @@ const { title, description, link } = Astro.props as Props;
 <div class="container">
     <div>
         <p class="title">{ title }</p>
+        
         <p class="description">{ description }</p>
     </div>
     
+    
+    <div class="status">
+        <p>developing</p>
+    </div>
     <a class="link" href={ link } target="_blank">Repository</a>
 </div>
 
@@ -41,6 +46,18 @@ const { title, description, link } = Astro.props as Props;
     .description {
         margin: 1em 0;
         font-size: 1.25rem;
+    }
+    .status {
+        background-color: gray;
+        border-radius: 5px;
+        width: fit-content;
+        margin: auto;
+        padding: 0.4em 0.8em;
+        font-size: 0.9rem;
+    }
+
+    .status p {
+        margin: 0;
     }
 
     .link {
