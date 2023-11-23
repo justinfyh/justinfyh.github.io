@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro';
-
+import ResumeCard from '../components/ResumeCard.astro';
 ---
 
 <!doctype html>
@@ -19,6 +19,7 @@ import Footer from '../components/Footer.astro';
 	<body>
 		<Header />
 		<slot />
+		<ResumeCard />
 		<Footer />
 	</body>
 </html>
@@ -34,11 +35,20 @@ import Footer from '../components/Footer.astro';
 			white 60%
 		);
 
+		
 		--main: #f0f0f0;
 		--secondary: white;
 		--text: black;
 		--image-filter: invert(100%);
 		margin: 0;
+
+		--gradient: linear-gradient(
+			0,
+			rgb(var(--accent-dark)) 0%,
+			rgb(var(--accent-dark)) 50%,
+			var(--main) 50%,
+			var(--main) 100%
+		);
 	}
 	:root.dark {
 		--accent: 136, 58, 234;
