@@ -11,49 +11,66 @@ const { title, description, link } = Astro.props as Props;
 
 <div class="container">
     <div>
-        <p class="title">{ title }</p>
-        
+        <p class="title">{ title } <span class="status-text">developing</span></p>
         <p class="description">{ description }</p>
     </div>
     
+    <!-- <div class="bottom-container">
+        <div class="status">
+            <p>developing</p>
+        </div> -->
+        <a class="link" href={ link } target="_blank">Repository</a>
+    <!-- </div> -->
     
-    <div class="status">
-        <p>developing</p>
-    </div>
-    <a class="link" href={ link } target="_blank">Repository</a>
 </div>
 
 <style>
     .container {
         background-color: var(--secondary);
         margin: 0;
-        /* border: solid white; */
         border-radius: 10px;
         border-width: 0.1em;
-        padding: 2em 1.2em;
+        padding: 3em 1.2em;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: space-between;
+        /* box-shadow: 0 0 4px var(--shadow); */
     }
-    
+
+    .status-text {
+        font-size: 0.6rem;
+        position: absolute;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+
     .title {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        font-weight: 600;
         margin-top: 0;
         margin-bottom: 0;
     }
     .description {
         margin: 1em 0;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
     .status {
         background-color: gray;
         border-radius: 5px;
         width: fit-content;
-        margin: auto;
+        margin: auto 0;
         padding: 0.4em 0.8em;
         font-size: 0.9rem;
+    }
+
+    .bottom-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .status p {
@@ -65,11 +82,11 @@ const { title, description, link } = Astro.props as Props;
         border-radius: 60px;
         border-width: 0.12em;
         padding: 0.6em 1.4em;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: rgb(var(--accent));
         text-decoration: none;
         font-weight: 500;
-        margin-top: 1em;
+        margin: 1em 0;
         display: inline-block;
         transition: background-color 0.3s ease-in-out;
     }
