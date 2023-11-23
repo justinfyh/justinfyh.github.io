@@ -25,7 +25,7 @@ import resume from '../documents/resume-justin-huang.pdf'
 
     .box {
         background-color: var(--secondary);
-        width: 40%;
+        width: 60%;
         margin: auto;
         border-radius: 10px;
         padding: 2em 3em;
@@ -33,6 +33,18 @@ import resume from '../documents/resume-justin-huang.pdf'
         box-shadow: 0 0 8px var(--shadow);
 
     }
+
+    @media(max-width: 1320px) {
+		.box {
+			width: 65%;
+		}
+	}
+
+	@media(max-width: 880px) {
+		.box {
+			width: 70%;
+		}
+	}
 
     .gradient {
         background-image: var(--accent-gradient);
@@ -45,7 +57,7 @@ import resume from '../documents/resume-justin-huang.pdf'
     }
 
     img {
-        height: 35px;
+        height: 30px;
     }
 
     .img-container {
