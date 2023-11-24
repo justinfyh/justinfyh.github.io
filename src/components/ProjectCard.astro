@@ -40,6 +40,13 @@ const { title, description, link, status, icons } = Astro.props as Props;
         border-radius: 10px;
     }
 
+    .bottom-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .container {
         background-color: var(--secondary);
         margin: 0;
@@ -79,13 +86,6 @@ const { title, description, link, status, icons } = Astro.props as Props;
         margin: auto 0;
         padding: 0.4em 0.8em;
         font-size: 0.9rem;
-    }
-
-    .bottom-container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
     }
 
     .status p {

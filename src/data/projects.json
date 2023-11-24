@@ -1,42 +1,42 @@
 [
     {
-        "title": "portfolio website",
+        "title": "Portfolio Website",
         "description": "This webpage :)",
         "link": "justinfyh.github.io",
         "status": "in development",
         "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"]
     },
     {
-        "title": "todo list",
-        "description": "Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage.",
+        "title": "Todo List",
+        "description": "Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage",
         "link": "todo-list",
         "status": "in development",
         "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
     },
     {
-        "title": "mobile store",
-        "description": "Mobile application store that allows users to login, browse pc components and add items to a cart",
+        "title": "Mobile Store",
+        "description": "Mobile application store to sell pc componenets. Users can login, browse categories and add to cart",
         "link": "blackjack-game",
         "status": "",
         "icons": ["devicon-java-plain colored", "devicon-androidstudio-plain colored", "devicon-firebase-plain colored"]
     },
     {
-        "title": "quick draw",
-        "description": "Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing",
+        "title": "QuickDraw",
+        "description": "Users can draw something based on a prompt and AI is used to interpret and make guesses on what the user is drawing",
         "link": "quick-draw",
         "status": "",
         "icons": ["devicon-java-plain colored"]
     }
     ,{
-        "title": "blackjack",
-        "description": "Allows the user to play blackjack against a bot, with different options for different strategies to play against",
+        "title": "Blackjack",
+        "description": "Users can play blackjack against a bot, with different options for different strategies to play against",
         "link": "blackjack-game",
         "status": "",
         "icons": ["devicon-java-plain colored"]
     },
     {
-        "title": "online store",
-        "description": "Developed an online store that allows users to login, browse, add to cart and purchase video games",
+        "title": "Web Store",
+        "description": "Online store where users can login, browse, add to cart and purchase video games which is sent using phpmailer",
         "link": "gamesmarket",
         "status": "",
         "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"]
