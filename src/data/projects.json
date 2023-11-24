@@ -7,7 +7,7 @@
         "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"]
     },
     {
-        "title": "Weather Application",
+        "title": "Weather App",
         "description": "Web application where a user can enter a city and view the live weather details through weather api",
         "link": "weather-app",
         "status": "in development",
@@ -17,13 +17,13 @@
         "title": "Todo List",
         "description": "Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage",
         "link": "todo-list",
-        "status": "in development",
+        "status": "",
         "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
     },
     {
         "title": "Mobile Store",
         "description": "Mobile application store to sell pc componenets. Users can login, browse categories and add to cart",
-        "link": "blackjack-game",
+        "link": "",
         "status": "",
         "icons": ["devicon-java-plain colored", "devicon-androidstudio-plain colored", "devicon-firebase-plain colored"]
     },
