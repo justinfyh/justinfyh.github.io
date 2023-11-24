@@ -1,27 +1,22 @@
 ---
 export interface Props {
-    title?: string;
+    title: string;
     description: string;
     link: string;
+    status?: string;
 }
 
-const { title, description, link } = Astro.props as Props;
+const { title, description, link, status } = Astro.props as Props;
 ---
 
 
 <div class="container">
     <div>
-        <p class="title">{ title } <span class="status-text">developing</span></p>
+        <p class="title">{ title } <span class="status-text">{ status }</span></p>
         <p class="description">{ description }</p>
     </div>
     
-    <!-- <div class="bottom-container">
-        <div class="status">
-            <p>developing</p>
-        </div> -->
-        <a class="link" href={ link } target="_blank">Repository</a>
-    <!-- </div> -->
-    
+    <a class="link" href={ link } target="_blank">Repository</a>
 </div>
 
 <style>
@@ -36,16 +31,14 @@ const { title, description, link } = Astro.props as Props;
         align-items: center;
         text-align: center;
         justify-content: space-between;
-        /* box-shadow: 0 0 4px var(--shadow); */
     }
 
     .status-text {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
         position: absolute;
-        margin-top: 2em;
+        margin-top: 1.7em;
         margin-left: 1em;
     }
-
 
     .title {
         font-size: 1.6rem;
@@ -53,10 +46,12 @@ const { title, description, link } = Astro.props as Props;
         margin-top: 0;
         margin-bottom: 0;
     }
+    
     .description {
         margin: 1em 0;
         font-size: 1.1rem;
     }
+
     .status {
         background-color: gray;
         border-radius: 5px;
