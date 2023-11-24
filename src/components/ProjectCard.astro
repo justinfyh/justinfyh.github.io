@@ -17,18 +17,27 @@ const { title, description, link, status, icons } = Astro.props as Props;
         <p class="description">{ description }</p>
     </div>
     
-    <div class="icon-container">
-        {icons?.map((icon) => (
-            <i class={ icon } />
-          ))}
+    <div>
+        <div class="icon-container">
+            {icons?.map((icon) => (
+                <i class={ icon } />
+              ))}
+        </div>
+    
+        <a class="link" href={ link } target="_blank">Repository</a>
     </div>
-
-    <a class="link" href={ link } target="_blank">Repository</a>
+    
 </div>
 
 <style>
     i {
         padding: 0.3em;
+        font-size: 1.4rem;
+    }
+    .icon-container {
+        background-color: var(--main);
+        padding: 0.5em;
+        border-radius: 10px;
     }
 
     .container {

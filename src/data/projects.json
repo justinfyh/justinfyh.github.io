@@ -4,7 +4,7 @@
         "description": "This webpage :)",
         "link": "justinfyh.github.io",
         "status": "in development",
-        "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
+        "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"]
     },
     {
         "title": "todo list",
@@ -18,27 +18,27 @@
         "description": "Mobile application store that allows users to login, browse pc components and add items to a cart",
         "link": "blackjack-game",
         "status": "",
-        "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
+        "icons": ["devicon-java-plain colored", "devicon-androidstudio-plain colored", "devicon-firebase-plain colored"]
     },
     {
         "title": "quick draw",
         "description": "Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing",
         "link": "quick-draw",
         "status": "",
-        "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
+        "icons": ["devicon-java-plain colored"]
     }
     ,{
         "title": "blackjack",
         "description": "Allows the user to play blackjack against a bot, with different options for different strategies to play against",
         "link": "blackjack-game",
         "status": "",
-        "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
+        "icons": ["devicon-java-plain colored"]
     },
     {
         "title": "online store",
-        "description": "gamesmarket",
-        "link": "justinfyh.github.io",
+        "description": "Developed an online store that allows users to login, browse, add to cart and purchase video games",
+        "link": "gamesmarket",
         "status": "",
-        "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
+        "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"]
     }
 ]
