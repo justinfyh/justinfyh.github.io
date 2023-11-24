@@ -1,12 +1,15 @@
 ---
+
+
 export interface Props {
     title: string;
     description: string;
     link: string;
     status?: string;
+    icons: string[];
 }
 
-const { title, description, link, status } = Astro.props as Props;
+const { title, description, link, status, icons } = Astro.props as Props;
 ---
 
 
@@ -16,6 +19,12 @@ const { title, description, link, status } = Astro.props as Props;
         <p class="description">{ description }</p>
     </div>
     
+    <div class="icon-container">
+        {icons?.map((icon) => (
+            <img src={ icon } alt={`Icon`} />
+          ))}
+    </div>
+
     <a class="link" href={ link } target="_blank">Repository</a>
 </div>
 
@@ -46,7 +55,7 @@ const { title, description, link, status } = Astro.props as Props;
         margin-top: 0;
         margin-bottom: 0;
     }
-    
+
     .description {
         margin: 1em 0;
         font-size: 1.1rem;
