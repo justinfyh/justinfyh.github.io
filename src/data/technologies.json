@@ -1,8 +1,0 @@
-{
-    "projects": [
-        {
-            "name": "todo",
-            "technologies": ["ReactNative", "Typescript", "SQLite"]
-        }
-    ]
-}

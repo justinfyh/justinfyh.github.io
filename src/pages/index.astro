@@ -3,9 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import Introduction from '../components/Introduction.astro';
 import Portfolio from '../components/Portfolio.astro'
-import discord from '../images/discord.png'
 
-
+import projects from '../data/projects.json'
 ---
 
 <Layout>
@@ -16,37 +15,15 @@ import discord from '../images/discord.png'
 		<Portfolio />
 		
 		<div class="grid-container">
-			<ProjectCard 
-				title='portfolio website' 
-				description='This webpage :)'
-				link='https://github.com/justinfyh/justinfyh.github.io'
-				status='in development'
-				icons={['devicon-react-original colored', 'devicon-typescript-plain colored', 'devicon-sqlite-plain colored']}/>
-			<ProjectCard 
-				title='todo list' 
-				description='Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage.'
-				link='https://github.com/justinfyh/todo-list'
-				status='in development'
-				icons={['devicon-react-original colored']}/>
-			<ProjectCard 
-				title='mobile store' 
-				description='Mobile application store that allows users to login, browse pc components and add items to a cart'
-				link='https://github.com/justinfyh/blackjack-game'
-				icons={['devicon-react-original colored']}/>
-			<ProjectCard title='quick draw' 
-				description='Allows the user to draw something based on a prompt and AI is used to make guesses on what the user is drawing'
-				link='https://github.com/justinfyh/quick-draw'
-				icons={['devicon-react-original colored']}/>
-			<ProjectCard 
-				title='blackjack' 
-				description='Allows the user to play blackjack against a bot, with different options for different strategies to play against'
-				link='https://github.com/justinfyh/blackjack-game'
-				icons={['devicon-react-original colored']}/>
-			<ProjectCard 
-				title='online store' 
-				description='Developed an online store that allows users to login, browse, add to cart and purchase video games'
-				link='https://github.com/justinfyh/gamesmarket'
-				icons={['devicon-react-original colored']}/>
+			{projects.map((project) => 
+				( <ProjectCard 
+					title={ project.title }
+					description= { project.description }
+					link={`https://github.com/justinfyh/${project.link}`}
+					status={ project.status }
+					icons={ project.icons }
+				/>))
+				}
 		</div>
 		
 		
