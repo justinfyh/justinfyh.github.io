@@ -42,6 +42,13 @@
         "icons": ["devicon-java-plain colored"]
     },
     {
+        "title": "Flappy Bird",
+        "description": "Flappy bird clone built using Unity",
+        "link": "flappy-bird",
+        "status": "",
+        "icons": ["devicon-unity-original", "devicon-csharp-plain colored"]
+    },
+    {
         "title": "Web Store",
         "description": "Online store where users can login, browse, add to cart and purchase video games which is sent using phpmailer",
         "link": "gamesmarket",
