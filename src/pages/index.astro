@@ -10,6 +10,7 @@ import projects from '../data/projects.json'
 <Layout>
 	<main>
 		<Landing />
+		
 		<Portfolio />
 		
 		<!-- render project cards -->
@@ -62,3 +63,16 @@ import projects from '../data/projects.json'
 		}
 	}
 </style>
+
+<script>
+	// Smooth scroll function
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth',
+			});
+		});
+	});
+</script>

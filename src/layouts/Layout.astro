@@ -26,22 +26,22 @@ import ResumeCard from '../components/ResumeCard.astro';
 </html>
 <style is:global>
 	:root {
-		--accent: 106, 90, 205;  /* Slate Blue */
---accent-light: 173, 216, 230;  /* Light Blue */
---accent-dark: 70, 130, 180;  /* Steel Blue */
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-		
 		--main: #f0f0f0;
 		--secondary: white;
 		--text: black;
 		--shadow: #525252;
 		--image-filter: invert(100%);
 		--tint: rgba(255, 255, 255, 0.1);
+
+		--accent: 106, 90, 205;  /* Slate Blue */
+		--accent-light: 173, 216, 230;  /* Light Blue */
+		--accent-dark: 70, 130, 180;  /* Steel Blue */
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
 
 		--gradient: linear-gradient(
 			0,
@@ -50,27 +50,27 @@ import ResumeCard from '../components/ResumeCard.astro';
 			var(--main) 50%,
 			var(--main) 100%
 		);
-
 	}
 	:root.dark {
-		--accent: 136, 58, 234;       /* Original Purple */
---accent-light: 186, 158, 234; /* Lightened Purple */
---accent-dark: 86, 10, 134;    /* Darkened Purple */
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-		
 		--main: #13151a;
 		--secondary: #1d1f26;
 		--text: white;
 		--shadow: #ebebeb;
 		--image-filter: unset;
 		--tint: rgba(0, 0, 0, 0.3);
+
+		--accent: 136, 58, 234;       /* Original Purple */
+		--accent-light: 186, 158, 234; /* Lightened Purple */
+		--accent-dark: 86, 10, 134;    /* Darkened Purple */
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
 	}
 
+	/* Styling scrollbar */
 	::-webkit-scrollbar {
 		width: 15px; 
 	}

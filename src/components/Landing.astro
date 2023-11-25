@@ -1,21 +1,18 @@
 ---
-title: "Astro Parallax Example"
 import Header from "./Header.astro";
 import Introduction from "./Introduction.astro";
+import down from "../images/down-arrow.png"
 ---
 
-<astro-fragment>
-  <div class="container">
+<section id="section1" class="container">
     <div class="overlay">
         <div class="tint">
             <div class="header-container"><Header /></div>
             <div class="content"><Introduction /></div>
-            <div class="scroll"><p>Scroll Down</p></div>
+            <div class="scroll"><a href="#section2"><img src={down.src} alt=""></a></div>
         </div>
     </div>
-</div>
-</astro-fragment>
-
+</section>
 
 <style>
     .container {
@@ -54,11 +51,26 @@ import Introduction from "./Introduction.astro";
     }
 
     .scroll {
-        font-size: 1.3rem;
+        font-size: 1rem;
         position: absolute;
-        bottom: 2em; 
-        text-align: center;
-        width: 100%;
+        bottom: 1em;
+        cursor: pointer;
+        padding: 1em 1.2em;
     }
 
+    .scroll a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .scroll img {
+        margin: 0;
+        height: 2.5em;
+        transition: height 0.1s ease-in-out;
+    }
+
+    .scroll img:hover {
+        height: 3em;
+        transition: height 0.1s ease-in-out;
+    }
   </style>
