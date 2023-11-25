@@ -10,6 +10,7 @@ import Introduction from "./Introduction.astro";
         <div class="tint">
             <div class="header-container"><Header /></div>
             <div class="content"><Introduction /></div>
+            <div class="scroll"><p>Scroll Down</p></div>
         </div>
     </div>
 </div>
@@ -22,16 +23,17 @@ import Introduction from "./Introduction.astro";
         margin: 0;
         height: 100vh;
         width: 100vw;
-        align-items: center;
-        justify-content: center;
         text-align: center;
         font-size: 2em;
         scroll-margin-top: 50vh;
+        position: relative
     }
 
     .header-container {
         top: 0;
-        height: 5em;
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
     }
 
     .overlay {
@@ -46,6 +48,17 @@ import Introduction from "./Introduction.astro";
         background-color: var(--tint);
         height: 100vh;
         transition: background-color 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll {
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 30px; 
+        text-align: center;
+        width: 100%;
     }
 
   </style>
