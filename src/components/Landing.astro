@@ -1,0 +1,58 @@
+---
+title: "Astro Parallax Example"
+import Header from "./Header.astro";
+import Introduction from "./Introduction.astro";
+---
+
+<astro-fragment>
+  <div class="parallax-container">
+    <div class="overlay">
+        <div  class="header-container"><Header /></div>
+        <div class="content"><Introduction /></div>
+    </div>
+</div>
+</astro-fragment>
+
+
+<style>
+    .parallax-container {
+        max-width: 100%;
+        margin: 0;
+        
+        height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff; /* Adjust text color for readability */
+        text-align: center;
+        /* position: relative; */
+        font-size: 2em;
+        scroll-margin-top: 50vh;
+    }
+
+    .header-container {
+        top: 0;
+        height: 5em;
+        
+
+    }
+
+    .overlay {
+        background: url('../images/screen.jpg') no-repeat center fixed;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100vh;
+        width: 100%;
+    }
+
+    .content {
+        margin: auto;
+        align-self: center;
+        max-width: 100%;
+
+    }
+  </style>

@@ -3,15 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import Introduction from '../components/Introduction.astro';
 import Portfolio from '../components/Portfolio.astro'
+import Landing from '../components/Landing.astro';
 
 import projects from '../data/projects.json'
 ---
 
 <Layout>
 	<main>
+		<Landing />
 
 		<Introduction />
-
 		<Portfolio />
 		
 		<div class="grid-container">
@@ -32,8 +33,8 @@ import projects from '../data/projects.json'
 
 <style>
 	main {
-		margin: auto;
-		padding: 1rem;
+		margin: 0;
+		padding: 0;
 		width: auto;
 		max-width: calc(100% - 2rem);
 		font-size: 20px;
