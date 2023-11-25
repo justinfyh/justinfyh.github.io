@@ -11,7 +11,7 @@
         "description": "Web application where a user can enter a city and view the live weather details through weather api",
         "link": "weather-app",
         "status": "in development",
-        "icons": ["devicon-react-original colored", "devicon-javascript-plain colored"]
+        "icons": ["devicon-react-original colored", "devicon-express-original", "devicon-nodejs-plain colored"]
     },
     {
         "title": "Todo List",
