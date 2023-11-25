@@ -1,5 +1,4 @@
 ---
-import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro';
 import ResumeCard from '../components/ResumeCard.astro';
 ---
@@ -10,7 +9,7 @@ import ResumeCard from '../components/ResumeCard.astro';
 		<meta charset="UTF-8" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/icon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -20,7 +19,6 @@ import ResumeCard from '../components/ResumeCard.astro';
 		<title>Justin Huang | Portfolio</title>
 	</head>
 	<body>
-		<!-- <Header /> -->
 		<slot />
 		<ResumeCard />
 		<Footer />
@@ -37,14 +35,13 @@ import ResumeCard from '../components/ResumeCard.astro';
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
-
 		
 		--main: #f0f0f0;
 		--secondary: white;
 		--text: black;
 		--shadow: #525252;
 		--image-filter: invert(100%);
-		margin: 0;
+		--tint: rgba(255, 255, 255, 0.1);
 
 		--gradient: linear-gradient(
 			0,
@@ -54,7 +51,6 @@ import ResumeCard from '../components/ResumeCard.astro';
 			var(--main) 100%
 		);
 
-		--tint: rgba(255, 255, 255, 0.1);
 	}
 	:root.dark {
 		--accent: 136, 58, 234;
