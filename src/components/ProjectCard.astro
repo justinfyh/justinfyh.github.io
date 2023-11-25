@@ -13,7 +13,8 @@ const { title, description, link, status, icons } = Astro.props as Props;
 
 <div class="container">
     <div>
-        <p class="title">{ title } <span class="status-text">{ status }</span></p>
+        <p class="title">{ title } </p>
+        <span class="status-text">{ status }</span>
         <p class="description">{ description }</p>
     </div>
     
@@ -63,7 +64,7 @@ const { title, description, link, status, icons } = Astro.props as Props;
     .status-text {
         font-size: 0.65rem;
         position: absolute;
-        margin-top: 1.7em;
+        margin-top: 0em;
         margin-left: 1em;
     }
 
