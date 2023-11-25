@@ -5,10 +5,11 @@ import resume from '../documents/resume-justin-huang.pdf'
 
 <div class="container">
     <div class="box">
-        <p>View my resume here</p>
+        
         <a href={ resume } download>
             <div class="img-container">
             <img src={ download.src } alt="">
+                <p>Download resume</p>
         </div>
         </a>
     </div>
@@ -53,19 +54,27 @@ import resume from '../documents/resume-justin-huang.pdf'
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        margin-left: 1em;
+    }
+
+    a {
+        color: white;
     }
 
     img {
-        height: 30px;
+        height: 25px;
     }
 
     .img-container {
         background-color: rgb(var(--accent-dark));
         border-radius: 10px;
-        padding: 0.7em 0.7em;
-        width: 5em;
+        padding: 0.2em 1.2em;
+        width: fit-content;
         margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .img-container:hover {
