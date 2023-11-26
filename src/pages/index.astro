@@ -3,12 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import Portfolio from '../components/Portfolio.astro'
 import Landing from '../components/Landing.astro';
+import Loading from '../components/Loading.astro';
 
 import projects from '../data/projects.json'
 ---
 
 <Layout>
-	<main>
+	<Loading/>
+	<main id="main-content">
 		<Landing />
 		
 		<Portfolio />
@@ -75,4 +77,15 @@ import projects from '../data/projects.json'
 			});
 		});
 	});
+
+	window.addEventListener("load", function () {
+    // Simulate loading time (you would replace this with actual asset loading logic)
+    setTimeout(function () {
+        // Hide the loading screen
+        document.getElementById("loading-screen").style.display = "none";
+        // Show the main content
+        document.getElementById("main-content").style.display = "block";
+    }, 500); // Adjust the time based on your actual loading time
+});
+
 </script>
