@@ -11,9 +11,9 @@
     {
         "title": "Live Chat App",
         "description": "Developing a live chat web application with user accounts, authentication and more",
-        "link": "weather-app",
+        "link": "",
         "status": "in development",
-        "icons": ["devicon-react-original colored", "devicon-express-original", "devicon-nodejs-plain colored"],
+        "icons": ["devicon-mongodb-plain colored", "devicon-express-original", "devicon-react-original colored",  "devicon-nodejs-plain colored"],
         "button": "Developing",
         "style": "link-d"
     },
