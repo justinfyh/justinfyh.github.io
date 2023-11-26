@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.5.7"
+    "astro": "^3.5.7",
+    "ldrs": "^1.0.1"
   }
 }
