@@ -4,55 +4,80 @@
         "description": "This webpage :) which is being developed using Astro framework",
         "link": "justinfyh.github.io",
         "status": "in development",
-        "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"]
+        "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Live Chat App",
+        "description": "Developing a live chat web application with user accounts, authentication and more",
+        "link": "weather-app",
+        "status": "in development",
+        "icons": ["devicon-react-original colored", "devicon-express-original", "devicon-nodejs-plain colored"],
+        "button": "Developing",
+        "style": "link-d"
     },
     {
         "title": "Weather App",
         "description": "Web application where a user can enter a city and view the live weather details through weather api",
         "link": "weather-app",
         "status": "in development",
-        "icons": ["devicon-react-original colored", "devicon-express-original", "devicon-nodejs-plain colored"]
+        "icons": ["devicon-react-original colored", "devicon-express-original", "devicon-nodejs-plain colored"],
+        "button": "Repository",
+        "style": "link"
     },
     {
         "title": "Todo List",
         "description": "Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage",
         "link": "todo-list",
         "status": "",
-        "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"]
+        "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"],
+        "button": "Repository",
+        "style": "link"
     },
     {
         "title": "Mobile Store",
         "description": "Mobile application store to sell pc componenets. Users can login, browse categories and add to cart",
         "link": "",
         "status": "",
-        "icons": ["devicon-java-plain colored", "devicon-androidstudio-plain colored", "devicon-firebase-plain colored"]
+        "icons": ["devicon-java-plain colored", "devicon-androidstudio-plain colored", "devicon-firebase-plain colored"],
+        "button": "",
+        "style": ""
     },
     {
-        "title": "QuickDraw",
+        "title": "Quick Draw",
         "description": "Users can draw something based on a prompt and AI is used to interpret and make guesses on what the user is drawing",
         "link": "quick-draw",
         "status": "",
-        "icons": ["devicon-java-plain colored"]
+        "icons": ["devicon-java-plain colored"],
+        "button": "Repository",
+        "style": "link"
     }
     ,{
         "title": "Blackjack",
         "description": "Users can play blackjack against a bot, with different options for different strategies to play against",
         "link": "blackjack-game",
         "status": "",
-        "icons": ["devicon-java-plain colored"]
+        "icons": ["devicon-java-plain colored"],
+        "button": "Repository",
+        "style": "link"
     },
     {
         "title": "Flappy Bird",
         "description": "Flappy bird clone built using Unity",
         "link": "flappy-bird",
         "status": "",
-        "icons": ["devicon-unity-original", "devicon-csharp-plain colored"]
+        "icons": ["devicon-unity-original", "devicon-csharp-plain colored"],
+        "button": "Repository",
+        "style": "link"
     },
     {
         "title": "Web Store",
         "description": "Online store where users can login, browse, add to cart and purchase video games which is sent using phpmailer",
         "link": "gamesmarket",
         "status": "",
-        "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"]
+        "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"],
+        "button": "Repository",
+        "style": "link"
     }
 ]

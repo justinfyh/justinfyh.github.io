@@ -5,9 +5,11 @@ export interface Props {
     link: string;
     status?: string;
     icons: string[];
+    button: string;
+    style: string;
 }
 
-const { title, description, link, status, icons } = Astro.props as Props;
+const { title, description, link, status, icons, button, style } = Astro.props as Props;
 ---
 
 
@@ -25,7 +27,7 @@ const { title, description, link, status, icons } = Astro.props as Props;
               ))}
         </div>
     
-        <a class="link" href={ link } target="_blank">Repository</a>
+        <a class={ style } href={ link } target="_blank">{ button }</a>
     </div>
     
 </div>
@@ -110,5 +112,17 @@ const { title, description, link, status, icons } = Astro.props as Props;
         cursor: pointer;
         background-color: rgb(var(--accent));
         color: var(--secondary);
+    }
+
+    .link-d {
+        border-width: 0.12em;
+        padding: 0.6em 1.4em;
+        font-size: 1rem;
+        color: rgb(var(--accent));
+        text-decoration: none;
+        font-weight: 500;
+        margin: 1em 0;
+        display: inline-block;
+        transition: background-color 0.3s ease-in-out;
     }
 </style>
