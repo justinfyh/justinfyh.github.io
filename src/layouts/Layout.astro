@@ -16,6 +16,7 @@ import ResumeCard from '../components/ResumeCard.astro';
 		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		<!-- <link rel="preload" href="Mona-Sans.woff2" as="font" type="font/woff2" crossorigin> -->
 		<title>Justin Huang | Portfolio</title>
 	</head>
 	<body>
@@ -114,9 +115,18 @@ import ResumeCard from '../components/ResumeCard.astro';
 			monospace;
 	}
 
+	@font-face {
+	font-family: 'Mona Sans';
+	src:
+		url('Mona-Sans.woff2') format('woff2 supports variations'),
+		url('Mona-Sans.woff2') format('woff2-variations');
+	font-weight: 200 900;
+	font-stretch: 75% 125%; 
+	}
+
 	body {
 		margin: 0;
-		font-family: 'Inter', sans-serif, 'Raleway', sans-serif, 'Lato', sans-serif;
+		font-family: 'Mona Sans', sans-serif, 'Inter', sans-serif, 'Raleway', sans-serif, 'Lato', sans-serif;
 		user-select: none;
     	-webkit-tap-highlight-color: transparent;
 	}
