@@ -1,5 +1,5 @@
 ---
-import Header from "./Header.astro";
+import HeaderNew from "./HeaderNew.astro";
 import Introduction from "./Introduction.astro";
 import down from "../images/down-arrow.png"
 ---
@@ -7,7 +7,7 @@ import down from "../images/down-arrow.png"
 <section id="section1" class="container">
     <div class="overlay">
         <div class="tint">
-            <div class="header-container"><Header /></div>
+            <div class="header-container"><HeaderNew /></div>
             <div class="content"><Introduction /></div>
             <div class="scroll"><a href="#section2"><img src={down.src} alt=""></a></div>
         </div>
@@ -29,8 +29,8 @@ import down from "../images/down-arrow.png"
     .header-container {
         top: 0;
         position: absolute;
-        width: 100%;
-        max-width: 100%;
+        width: 100vw;
+        max-width: 100vw;
     }
 
     .overlay {
@@ -44,6 +44,7 @@ import down from "../images/down-arrow.png"
     .tint {
         background-color: var(--tint);
         height: 100vh;
+        width: 100vw;
         transition: background-color 0.3s ease-in-out;
         display: flex;
         align-items: center;

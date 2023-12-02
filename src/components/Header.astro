@@ -7,8 +7,8 @@ import Hamburger from './Hamburger.astro'
 
 <header class="header">
     <div class="container">
-        <div class="logo">
-        </div>
+        <!-- <div class="logo">
+        </div> -->
         <nav class="nav">
             <ul class="nav-links">
                 <li>
@@ -17,9 +17,9 @@ import Hamburger from './Hamburger.astro'
                 <li>
                     <a href="https://www.linkedin.com/in/justinfyh/" target="_blank"><img src={linkedin.src} alt=""></a>
                 </li>
-                <li>
+                <!-- <li>
                     <ThemeIcon />
-                </li>
+                </li> -->
             </ul>
             <div class="hamburger2">
                 <Hamburger />
@@ -31,12 +31,13 @@ import Hamburger from './Hamburger.astro'
 <style>
     .header {
         height: 2.5em;
+        width: 100vw;
     }
 
     .header .container {
-        height: 100%;
+        /* height: 100%; */
         display: flex;
-        width: 80%;
+        /* width: 80%; */
         align-items: center;
         padding: 0;
         margin: auto;
@@ -45,8 +46,8 @@ import Hamburger from './Hamburger.astro'
     .header nav {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 90%;
+        /* justify-content: space-between; */
+        width: 100%;
         margin: auto;
     }
 
@@ -67,7 +68,7 @@ import Hamburger from './Hamburger.astro'
     }
 
     .nav-links {
-        display: none;
+        /* display: none; */
     }
 
     .expanded {
