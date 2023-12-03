@@ -1,12 +1,24 @@
-<section class="text-white py-10">
+---
+import resume from '../documents/resume-justin-huang.pdf'
+---
+
+<section class="text-white py-20">
     <div class="w-1/2 m-auto">
         <h1 class="text-black text-5xl mb-8">About Me</h1>
-        
+        <p class="text-black mb-16">Hi there, I am currently a Software Engineering Student studying at the University of Auckland based in New Zealand. I am passionate about software development and always looking to learn more and improve my skillset. I enjoy developing all sorts of technologies and applications to solve problems and create products.</p>
+        <!-- <div> -->
+            <a class="border-indigo-700 border-solid border-2 rounded-xl  p-4 text-indigo-700 hover:text-white hover:bg-indigo-700" href={ resume } download>Download resume</a>
+
+        <!-- </div> -->
     </div>
 </section>
 
 <style>
     section {
         background-color: var(--main);
+    }
+
+    a {
+        transition: background 0.5s;
     }
 </style>
