@@ -15,7 +15,7 @@
         "status": "in development",
         "icons": ["devicon-mongodb-plain colored", "devicon-express-original", "devicon-react-original colored",  "devicon-nodejs-plain colored"],
         "button": "Developing",
-        "style": "link-d"
+        "style": "link"
     },
     {
         "title": "Weather App",
@@ -37,12 +37,12 @@
     },
     {
         "title": "Mobile Store",
-        "description": "Mobile application store to sell pc componenets. Users can login, browse categories and add to cart",
+        "description": "Mobile application store to sell pc components. Users can login, browse categories and add to cart",
         "link": "",
         "status": "",
         "icons": ["devicon-java-plain colored", "devicon-androidstudio-plain colored", "devicon-firebase-plain colored"],
         "button": "",
-        "style": ""
+        "style": "link"
     },
     {
         "title": "Quick Draw",

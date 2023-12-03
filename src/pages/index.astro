@@ -28,7 +28,7 @@ import projects from '../data/projects.json'
 					icons={ project.icons }
 					button={ project.button }
 					style={ project.style }
-				/>))
+				/><hr class="border-1 border-slate-800"/>))
 				}
 		</div>
 		<Skills/>
@@ -45,6 +45,9 @@ import projects from '../data/projects.json'
 		font-size: 20px;
 		line-height: 1.6;
 	}
+	.grid-container hr:last-child {
+		display: none;
+	}
 
 	/* style projects grid */
 	.grid-container {
@@ -52,8 +55,8 @@ import projects from '../data/projects.json'
 		width: 50%;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-  		grid-gap: 1em;
-		grid-row-gap: 1em;
+  		/* grid-gap: 1em;
+		grid-row-gap: 1em; */
 	}
 
 	/* change grid layout based on viewport width */
