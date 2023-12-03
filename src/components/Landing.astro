@@ -5,7 +5,7 @@ import down from "../images/down-arrow.png"
 ---
 
 <section id="section1" class="">
-    <div class="overlay bg-slate-800 w-full h-screen">
+    <div class="overlay bg-slate-800 w-full">
         <div class="tint h-screen w-1/2 m-auto flex items-center justify-center">
             <div class="header-container top-0 absolute"><HeaderNew /></div>
             <div class="w-full">
@@ -17,6 +17,10 @@ import down from "../images/down-arrow.png"
 </section>
 
 <style>
+    .overlay {
+        height: 100svh;
+    }
+
     .scroll {
         bottom: 1em;
         padding: 1em 1.2em;

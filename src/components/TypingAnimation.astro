@@ -26,6 +26,12 @@ const { text } = Astro.props as Props;
       border-color: transparent;
     }
   }
+
+  @media  screen and (max-width: 770px) {
+      h1 {
+        text-wrap: wrap;
+      }     
+    }
 </style>
 
 <script>
