@@ -3,11 +3,11 @@ import download from '../images/download.png'
 import resume from '../documents/resume-justin-huang.pdf'
 ---
 
-<div class="container">
+<div class="container1">
     <div class="box">
         
         <a href={ resume } download>
-            <div class="img-container">
+            <div class="img-container bg-slate-800">
             <img src={ download.src } alt="">
                 <p>Download resume</p>
         </div>
@@ -16,7 +16,7 @@ import resume from '../documents/resume-justin-huang.pdf'
 </div>
 
 <style>
-    .container {
+    .container1 {
         height: auto;
         background: var(--gradient);
         display: flex;
@@ -67,9 +67,9 @@ import resume from '../documents/resume-justin-huang.pdf'
     }
 
     .img-container {
-        background-color: rgb(var(--accent-dark));
+        /* background-color: rgb(var(--accent-dark)); */
         border-radius: 10px;
-        padding: 0.2em 1.2em;
+        padding: 1.3em;
         width: fit-content;
         margin: auto;
         display: flex;
