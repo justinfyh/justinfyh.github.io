@@ -1,7 +1,7 @@
 [
     {
         "title": "Portfolio Website",
-        "description": "This webpage, which is being developed using Astro framework",
+        "description": "This webpage, which is being developed using Astro framework and styled with Tailwindcss",
         "link": "justinfyh.github.io",
         "status": "in development",
         "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"],
@@ -10,7 +10,7 @@
     },
     {
         "title": "Live Chat App",
-        "description": "Developing a live chat web application with user accounts, authentication and more",
+        "description": "A live chat application developed using MERN stack with user accounts and authentication",
         "link": "",
         "status": "in development",
         "icons": ["devicon-mongodb-plain colored", "devicon-express-original", "devicon-react-original colored",  "devicon-nodejs-plain colored"],
@@ -64,7 +64,7 @@
     },
     {
         "title": "Flappy Bird",
-        "description": "Flappy bird clone built using Unity",
+        "description": "Flappy bird clone built using Unity and scripted with C#",
         "link": "flappy-bird",
         "status": "",
         "icons": ["devicon-unity-original", "devicon-csharp-plain colored"],
@@ -73,7 +73,7 @@
     },
     {
         "title": "Web Store",
-        "description": "Online store where users can login, browse, add to cart and purchase video games which is sent using phpmailer",
+        "description": "Online store where users can login, browse, add to cart and purchase video games which are sent using phpmailer",
         "link": "gamesmarket",
         "status": "",
         "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"],
