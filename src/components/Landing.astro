@@ -4,13 +4,12 @@ import Introduction from "./Introduction.astro";
 import down from "../images/down-arrow.png"
 ---
 
-<section id="section1" class="container">
-    <div class="overlay">
-        <div class="tint">
+<section id="section1" class="">
+    <div class="overlay bg-slate-800 w-full h-screen">
+        <div class="tint h-screen w-80 m-auto">
             <div class="header-container"><HeaderNew /></div>
-            <div class="left-container">
+            <div class="left-container w-full">
                 <div class="content"><Introduction /></div>
-
             </div>
             <div class="scroll"><a href="#section2"><img src={down.src} alt=""></a></div>
         </div>
@@ -21,15 +20,15 @@ import down from "../images/down-arrow.png"
     .container {
         margin: 0;
         height: 100vh;
-        text-align: center;
-        font-size: 2em;
-        scroll-margin-top: 50vh;
-        position: relative
+     text-align: center;
+    /*    font-size: 2em; */
+        /* scroll-margin-top: 50vh;
+        position: relative */
     }
 
 
     .left-container {
-        width: 20em;
+        /* width: 20em; */
     }
 
     .header-container {
@@ -38,17 +37,18 @@ import down from "../images/down-arrow.png"
     }
 
     .overlay {
-        background: url('../images/screen.jpg') no-repeat top fixed; 
-        background-size: cover;
+        /* background: url('../images/screen.jpg') no-repeat top fixed;  */
+        /* background-size: cover;
         background-position: top;
         position: absolute;
-        width: 100%;
+        width: 100%; */
     }
 
     .tint {
-        height: 100vh;
+        /* height: 100vh;
         width: 20em;
-        margin: auto;
+        margin: auto; */
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
