@@ -1,71 +1,26 @@
----
----
-
-<header class="header">
-    <!-- <div class="container"> -->
-        <nav class="nav">
-            <ul class="nav-links">
+<header class="header h-8 m-0">
+        <nav class="nav flex m-0 p-3">
+            <ul class="nav-links flex m-0 p-0">
                 <li>
-                    <a href="https://github.com/justinfyh" target="_blank">Github</a>
+                    <a href="https://github.com/justinfyh" target="_blank" ><p class="hover:text-cyan-300">Github</p></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/justinfyh/" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/justinfyh/" target="_blank"><p class="hover:text-cyan-300">LinkedIn</p></a>
                 </li>
             </ul>
         </nav>
-    <!-- </div> -->
 </header>
 
 <style>
-    .header {
-        height: 2em;
-        /* width: 100vw; */
-        margin: 0;
-    }
-
-    .header nav {
-        display: flex;
-        justify-content: flex-end;
-        padding: 0.5em;
-        max-width: 100vw;
-        margin: 0;
-    }
-
-    .nav-links {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-
-    .header nav ul {
-        /* align-items: center; */
-    }
-
     .header nav ul li {
         list-style-type: none;
-        padding: 0 0.2em;
+        padding: 0 0.5em;
         height: 1em;
 
     }
 
     .header nav ul li a {
         color: white;
-        font-size: 1.2rem;
-    }
-
-
-
-    @media screen and (min-width: 470px) {
-        .nav-links {
-            /* display: flex;
-            padding: 0;
-            width: 100%;
-            justify-content: space-between; */
-        }
+        font-size: 1.1rem;
     }
 </style>
-
-<script>
-    import '../scripts/menu.js'
-</script>
