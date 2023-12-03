@@ -16,18 +16,20 @@ const { title, description, link, status, icons, button, style } = Astro.props a
 <div class="container">
     <div class="">
         <p class="title">{ title } </p>
-        <span class="status-text">{ status }</span>
+        <!-- <span class="status-text">{ status }</span> -->
         <p class="description">{ description }</p>
     </div>
     
     <div>
-        <div class="icon-container">
+        <!-- <div class="icon-container">
             {icons?.map((icon) => (
                 <i class={ icon } />
               ))}
+        </div> -->
+        <div>
+            <a class={ style } href={ link } target="_blank">{ button }</a>
+            <a class={ style } href={ link } target="_blank">README.md</a>
         </div>
-    
-        <a class={ style } href={ link } target="_blank">{ button }</a>
     </div>
     
 </div>
@@ -51,15 +53,16 @@ const { title, description, link, status, icons, button, style } = Astro.props a
     }
 
     .container {
-        background-color: var(--secondary);
+        /* background-color: var(--secondary); */
         margin: 0;
         border-radius: 10px;
         border-width: 0.1em;
-        padding: 3em 1.2em;
+        padding: 2em 1.2em;
+        padding-left: 16em;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        /* align-items: center; */
+        text-align: left;
         justify-content: space-between;
     }
 
@@ -72,7 +75,7 @@ const { title, description, link, status, icons, button, style } = Astro.props a
 
     .title {
         font-size: 1.6rem;
-        font-weight: 600;
+        /* font-weight: 600; */
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -97,7 +100,7 @@ const { title, description, link, status, icons, button, style } = Astro.props a
 
     .link {
         border: solid rgb(var(--accent));
-        border-radius: 60px;
+        border-radius: 10px;
         border-width: 0.12em;
         padding: 0.6em 1.4em;
         font-size: 1rem;

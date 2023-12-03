@@ -47,9 +47,9 @@ import projects from '../data/projects.json'
 	/* style projects grid */
 	.grid-container {
 		margin: 1em auto;
-		width: 85%;
+		width: 50%;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(1, 1fr);
   		grid-gap: 1em;
 		grid-row-gap: 1em;
 	}
@@ -57,7 +57,7 @@ import projects from '../data/projects.json'
 	/* change grid layout based on viewport width */
 	@media(max-width: 1320px) {
 		.grid-container {
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(1, 1fr);
 			width: 90%;
 		}
 	}
