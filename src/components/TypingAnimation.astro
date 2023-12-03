@@ -6,19 +6,15 @@ export interface Props {
 const { text } = Astro.props as Props;
 ---
 
-<div id="typing" class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0 leading-10">{text}</h1></div>
+<div id="typing" class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0 leading-11">{text}</h1></div>
 
 <style>
   .typing-container {
-    border-right: 0.1em solid #fff;
+    border-right: 0.2em solid #fff;
   }
 
   .animation {
     animation: typing-animation 2s steps(30) forwards;
-  }
-
-  h1 {
-    /* line-height: 1.1em; */
   }
 
   @keyframes typing-animation {
