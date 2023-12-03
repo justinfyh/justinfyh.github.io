@@ -1,35 +1,61 @@
-<div id="section2" class="w-1/2 mx-auto py-10">
-    <h1 class=""><span class="text-slate-800 text-5xl">Portfolio</span></h1>
-    <!-- <p>some projects I'm working/worked on</p> -->
+---
+import TypingAnimation from "./TypingAnimation.astro";
+---
+
+<div class=" w-1/2 mx-auto">
+    <div id="section2" class="w-fit mr-auto pt-20">
+        <div id="typing1" class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0 leading-10">Portfolio</h1></div>
+    </div>
+    
 </div>
 
 <style>
-    @media(min-width: 700px) {
-        .container {
-            display: flex;
-            align-items: flex-end;
-		    margin-left: 10%;
-            text-align: left;
-        }
+    .typing-container {
+      border-right: 0.2em solid #000;
     }
-    
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-
-    h1 {
-        /* margin-top: 1em;
-        margin-bottom: 0; */
-    }  
-
-    p {
-        margin-top: 0;
-        margin-bottom: 0.6em;
-        white-space: normal;
-        padding: 0 0.5em;
+  
+    .animation {
+      animation: typing-animation 1s steps(10) forwards;
     }
-</style>
+  
+    @keyframes typing-animation {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+        border-color: transparent;
+      }
+    }
+  </style>
+  
+  <script>
+    // Function to handle the intersection observer callback
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Add the changed class when the element is in view
+            targetElement.classList.add('animation');
+          } else {
+            // Remove the changed class when the element is out of view
+            targetElement.classList.remove('animation');
+          }
+        });
+      }
+  
+      // Target element
+      const targetElement = document.getElementById('typing1');
+  
+      // Options for the Intersection Observer
+      const options = {
+        root: null, // use the viewport as the root
+        rootMargin: '0px', // no margin
+        threshold: 0.5, // trigger when 50% of the element is visible
+      };
+  
+      // Create an Intersection Observer
+      const observer = new IntersectionObserver(handleIntersection, options);
+  
+      // Start observing the target element
+      observer.observe(targetElement);
+  </script>

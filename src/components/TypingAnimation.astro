@@ -6,16 +6,19 @@ export interface Props {
 const { text } = Astro.props as Props;
 ---
 
-<div class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0">{text}</h1></div>
+<div id="typing" class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0 leading-10">{text}</h1></div>
 
 <style>
   .typing-container {
     border-right: 0.1em solid #fff;
+  }
+
+  .animation {
     animation: typing-animation 2s steps(30) forwards;
   }
 
   h1 {
-    line-height: 1.1em;
+    /* line-height: 1.1em; */
   }
 
   @keyframes typing-animation {
@@ -28,3 +31,34 @@ const { text } = Astro.props as Props;
     }
   }
 </style>
+
+<script>
+  // Function to handle the intersection observer callback
+  function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add the changed class when the element is in view
+          targetElement.classList.add('animation');
+        } else {
+          // Remove the changed class when the element is out of view
+          targetElement.classList.remove('animation');
+        }
+      });
+    }
+
+    // Target element
+    const targetElement = document.getElementById('typing');
+
+    // Options for the Intersection Observer
+    const options = {
+      root: null, // use the viewport as the root
+      rootMargin: '0px', // no margin
+      threshold: 0.5, // trigger when 50% of the element is visible
+    };
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    // Start observing the target element
+    observer.observe(targetElement);
+</script>

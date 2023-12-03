@@ -1,7 +1,7 @@
 [
     {
         "title": "Portfolio Website",
-        "description": "This webpage :) which is being developed using Astro framework",
+        "description": "This webpage, which is being developed using Astro framework",
         "link": "justinfyh.github.io",
         "status": "in development",
         "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"],
