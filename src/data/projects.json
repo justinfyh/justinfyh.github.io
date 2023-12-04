@@ -2,7 +2,7 @@
     {
         "title": "Portfolio Website",
         "description": "This webpage, which is being developed using Astro framework and styled with Tailwindcss",
-        "link": "justinfyh.github.io",
+        "link": "portfolio/",
         "status": "in development",
         "icons": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"],
         "button": "Repository",
@@ -11,7 +11,7 @@
     {
         "title": "Live Chat App",
         "description": "A live chat application developed using MERN stack with user accounts and authentication",
-        "link": "",
+        "link": "chat-app/",
         "status": "in development",
         "icons": ["devicon-mongodb-plain colored", "devicon-express-original", "devicon-react-original colored",  "devicon-nodejs-plain colored"],
         "button": "Developing",
@@ -20,7 +20,7 @@
     {
         "title": "Weather App",
         "description": "Web application where a user can enter a city and view the live weather details through weather api",
-        "link": "weather-app",
+        "link": "weather-app/",
         "status": "in development",
         "icons": ["devicon-react-original colored", "devicon-express-original", "devicon-nodejs-plain colored"],
         "button": "Repository",
@@ -29,7 +29,7 @@
     {
         "title": "Todo List",
         "description": "Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage",
-        "link": "todo-list",
+        "link": "todo-list/",
         "status": "",
         "icons": ["devicon-react-original colored", "devicon-typescript-plain colored", "devicon-sqlite-plain colored"],
         "button": "Repository",
@@ -38,7 +38,7 @@
     {
         "title": "Mobile Store",
         "description": "Mobile application store to sell pc components. Users can login, browse categories and add to cart",
-        "link": "",
+        "link": "mobile-store/",
         "status": "",
         "icons": ["devicon-java-plain colored", "devicon-androidstudio-plain colored", "devicon-firebase-plain colored"],
         "button": "",
@@ -47,7 +47,7 @@
     {
         "title": "Quick Draw",
         "description": "Users can draw something based on a prompt and AI is used to interpret and make guesses on what the user is drawing",
-        "link": "quick-draw",
+        "link": "quick-draw/",
         "status": "",
         "icons": ["devicon-java-plain colored"],
         "button": "Repository",
@@ -56,7 +56,7 @@
     ,{
         "title": "Blackjack",
         "description": "Users can play blackjack against a bot, with different options for different strategies to play against",
-        "link": "blackjack-game",
+        "link": "blackjack/",
         "status": "",
         "icons": ["devicon-java-plain colored"],
         "button": "Repository",
@@ -65,7 +65,7 @@
     {
         "title": "Flappy Bird",
         "description": "Flappy bird clone built using Unity and scripted with C#",
-        "link": "flappy-bird",
+        "link": "flappy-bird/",
         "status": "",
         "icons": ["devicon-unity-original", "devicon-csharp-plain colored"],
         "button": "Repository",
@@ -74,7 +74,7 @@
     {
         "title": "Web Store",
         "description": "Online store where users can login, browse, add to cart and purchase video games which are sent using phpmailer",
-        "link": "gamesmarket",
+        "link": "web-store/",
         "status": "",
         "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"],
         "button": "Repository",
