@@ -1,128 +1,25 @@
----
-import linkedin from '../images/linkedin.png'
-import github from '../images/github.png'
-import ThemeIcon from './ThemeIcon.astro';
-import Hamburger from './Hamburger.astro'
----
-
-<header class="header">
-    <div class="container">
-        <!-- <div class="logo">
-        </div> -->
-        <nav class="nav">
-            <ul class="nav-links">
+<header class="header h-8 my-3">
+        <nav class="nav flex m-0 p-3">
+            <ul class="nav-links flex m-0 p-0">
                 <li>
-                    <a href="https://github.com/justinfyh" target="_blank"><img src={github.src} alt=""></a>
+                    <a href="https://github.com/justinfyh" target="_blank" ><p class="hover:text-indigo-600">Github</p></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/justinfyh/" target="_blank"><img src={linkedin.src} alt=""></a>
+                    <a href="https://www.linkedin.com/in/justinfyh/" target="_blank"><p class="hover:text-indigo-600">LinkedIn</p></a>
                 </li>
-                <!-- <li>
-                    <ThemeIcon />
-                </li> -->
             </ul>
-            <div class="hamburger2">
-                <Hamburger />
-            </div>
         </nav>
-    </div>
 </header>
 
 <style>
-    .header {
-        height: 2.5em;
-        width: 100vw;
-    }
-
-    .header .container {
-        /* height: 100%; */
-        display: flex;
-        /* width: 80%; */
-        align-items: center;
-        padding: 0;
-        margin: auto;
-    }
-
-    .header nav {
-        display: flex;
-        align-items: center;
-        /* justify-content: space-between; */
-        width: 100%;
-        margin: auto;
-    }
-
-    .header nav ul {
-        align-items: center;
-    }
-
     .header nav ul li {
         list-style-type: none;
-        padding: 0 0;
-
+        padding: 0 1em;
+        height: 1em;
     }
 
-    .header nav ul li a img {
-        height: 25px;
-        margin-top: 2px;
-        filter: var(--image-filter);
-    }
-
-    .nav-links {
-        /* display: none; */
-    }
-
-    .expanded {
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        padding-left: 1em;
-        position: absolute;
-    }
-
-    .expanded-nav {
-        width: 90%;
-        display: flex;
-
-    }
-
-    .hidden {
-        display: none;
-        visibility: hidden;
-    }
-
-
-    .logo a {
-        color: var(--text);
-        font-weight: 600;
-        font-size: 1.2rem;
-        text-decoration: none;
-    }
-
-    .hamburger2 {
-        position: absolute;
-        right: 0;
-        padding-right: 1em;
-    }
-
-    @media screen and (min-width: 470px) {
-        .nav-links {
-            display: flex;
-            padding: 0;
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        .hidden {
-            display: block;
-            visibility: unset;
-        }
-
-        .expanded-nav {
-            width: 100%;
-        }
+    .header nav ul li a {
+        color: white;
+        font-size: 1.1rem;
     }
 </style>
-
-<script>
-    import '../scripts/menu.js'
-</script>
