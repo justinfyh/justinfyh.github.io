@@ -6,7 +6,7 @@ export interface Props {
 const { text } = Astro.props as Props;
 ---
 
-<div id="typing" class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0 leading-11">{text}</h1></div>
+<div id="typing" class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0 leading-tight">{text}</h1></div>
 
 <style>
   .typing-container {
