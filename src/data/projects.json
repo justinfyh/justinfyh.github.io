@@ -13,6 +13,19 @@
     "style": "link"
   },
   {
+    "title": "SpotTrak",
+    "description": "Developing an application that provides users with personalized listening insights and the ability to curate custom playlists, offering a comprehensive and engaging experience within the world of Spotify music.",
+    "link": "https://github.com/justinfyh/justinfyh.github.io/blob/main/src/documents/spottrak/README.md",
+    "status": "in development",
+    "icons": [
+      "devicon-html5-plain colored",
+      "devicon-css3-plain colored",
+      "devicon-javascript-plain colored"
+    ],
+    "button": "Repository",
+    "style": "link"
+  },
+  {
     "title": "Live Chat App",
     "description": "A live chat application developed using MERN stack with user accounts and authentication",
     "link": "https://diakd0726.github.io/#/chat-app/",
