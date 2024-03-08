@@ -23,6 +23,8 @@ An application that provides users with personalized listening insights and the 
 
 ### Installation
 
+_Repository is currently not public_
+
 1. Clone the repository: `git clone [repository-url]`
 2. Navigate to the project directory: `cd [project-directory]`
 3. Install dependencies: `npm install`
