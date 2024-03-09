@@ -15,6 +15,11 @@ An application that provides users with personalized listening insights and the 
 - Spotify API
 - Tailwindcss
 
+## Roadblocks
+
+Difficult to set up and run api requests on a server as CORS restricts redirecting to the spotify authentication page.
+Thus, page is currently run on client-side
+
 ## Getting Started
 
 ### Prerequisites
