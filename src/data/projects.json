@@ -1,117 +1,130 @@
 [
-  {
-    "title": "Portfolio Website",
-    "description": "This webpage, which is being developed using Astro framework and styled with Tailwindcss",
-    "link": "https://github.com/justinfyh/justinfyh.github.io#readme",
-    "status": "in development",
-    "icons": [
-      "devicon-html5-plain colored",
-      "devicon-css3-plain colored",
-      "devicon-javascript-plain colored"
-    ],
-    "button": "Repository",
-    "style": "link"
-  },
-  {
-    "title": "SpotTrak",
-    "description": "Developing an application that provides users with personalized listening insights and the ability to curate custom playlists, offering a comprehensive and engaging experience within the world of Spotify music.",
-    "link": "https://github.com/justinfyh/justinfyh.github.io/blob/main/src/documents/spottrak/README.md",
-    "status": "in development",
-    "icons": [
-      "devicon-html5-plain colored",
-      "devicon-css3-plain colored",
-      "devicon-javascript-plain colored"
-    ],
-    "button": "Repository",
-    "style": "link"
-  },
-  {
-    "title": "Live Chat App",
-    "description": "A live chat application developed using MERN stack with user accounts and authentication",
-    "link": "https://diakd0726.github.io/#/chat-app/",
-    "status": "in development",
-    "icons": [
-      "devicon-mongodb-plain colored",
-      "devicon-express-original",
-      "devicon-react-original colored",
-      "devicon-nodejs-plain colored"
-    ],
-    "button": "Developing",
-    "style": "link"
-  },
-  {
-    "title": "Weather App",
-    "description": "Web application where a user can enter a city and view the live weather details through weather api",
-    "link": "https://diakd0726.github.io/#/weather-app/",
-    "status": "in development",
-    "icons": [
-      "devicon-react-original colored",
-      "devicon-express-original",
-      "devicon-nodejs-plain colored"
-    ],
-    "button": "Repository",
-    "style": "link"
-  },
-  {
-    "title": "Todo List",
-    "description": "Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage",
-    "link": "https://diakd0726.github.io/#/todo-list/",
-    "status": "",
-    "icons": [
-      "devicon-react-original colored",
-      "devicon-typescript-plain colored",
-      "devicon-sqlite-plain colored"
-    ],
-    "button": "Repository",
-    "style": "link"
-  },
-  {
-    "title": "Mobile Store",
-    "description": "Mobile application store to sell pc components. Users can login, browse categories and add to cart",
-    "link": "https://diakd0726.github.io/#/mobile-store/",
-    "status": "",
-    "icons": [
-      "devicon-java-plain colored",
-      "devicon-androidstudio-plain colored",
-      "devicon-firebase-plain colored"
-    ],
-    "button": "",
-    "style": "link"
-  },
-  {
-    "title": "Quick Draw",
-    "description": "Users can draw something based on a prompt and AI is used to interpret and make guesses on what the user is drawing",
-    "link": "https://diakd0726.github.io/#/quick-draw/",
-    "status": "",
-    "icons": ["devicon-java-plain colored"],
-    "button": "Repository",
-    "style": "link"
-  },
-  {
-    "title": "Blackjack",
-    "description": "Users can play blackjack against a bot, with different options for different strategies to play against",
-    "link": "https://diakd0726.github.io/#/blackjack/",
-    "status": "",
-    "icons": ["devicon-java-plain colored"],
-    "button": "Repository",
-    "style": "link"
-  },
-  {
-    "title": "Flappy Bird",
-    "description": "Flappy bird clone built using Unity and scripted with C#",
-    "link": "https://diakd0726.github.io/#/flappy-bird/",
-    "status": "",
-    "icons": ["devicon-unity-original", "devicon-csharp-plain colored"],
-    "button": "Repository",
-    "style": "link"
-  },
-  {
-    "title": "Web Store",
-    "description": "Online store where users can login, browse, add to cart and purchase video games which are sent using phpmailer",
-    "link": "https://diakd0726.github.io/#/web-store/",
-    "status": "",
-    "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"],
-    "button": "Repository",
-    "style": "link"
-  }
+    {
+        "title": "WDCC Passport",
+        "description": "Developing a passport application for the WDCC club in a team of 10.",
+        "link": "https://github.com/UoaWDCC/passport",
+        "status": "in development",
+        "icons": [
+            "devicon-html5-plain colored",
+            "devicon-css3-plain colored",
+            "devicon-javascript-plain colored"
+        ],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Portfolio Website",
+        "description": "This webpage, which is being developed using Astro framework and styled with Tailwindcss",
+        "link": "https://github.com/justinfyh/justinfyh.github.io#readme",
+        "status": "in development",
+        "icons": [
+            "devicon-html5-plain colored",
+            "devicon-css3-plain colored",
+            "devicon-javascript-plain colored"
+        ],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "SpotTrak",
+        "description": "Developing an application that provides users with personalized listening insights and the ability to curate custom playlists, offering a comprehensive and engaging experience within the world of Spotify music.",
+        "link": "https://github.com/justinfyh/justinfyh.github.io/blob/main/src/documents/spottrak/README.md",
+        "status": "in development",
+        "icons": [
+            "devicon-html5-plain colored",
+            "devicon-css3-plain colored",
+            "devicon-javascript-plain colored"
+        ],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Live Chat App",
+        "description": "A live chat application developed using MERN stack with user accounts and authentication",
+        "link": "https://diakd0726.github.io/#/chat-app/",
+        "status": "in development",
+        "icons": [
+            "devicon-mongodb-plain colored",
+            "devicon-express-original",
+            "devicon-react-original colored",
+            "devicon-nodejs-plain colored"
+        ],
+        "button": "Developing",
+        "style": "link"
+    },
+    {
+        "title": "Weather App",
+        "description": "Web application where a user can enter a city and view the live weather details through weather api",
+        "link": "https://diakd0726.github.io/#/weather-app/",
+        "status": "in development",
+        "icons": [
+            "devicon-react-original colored",
+            "devicon-express-original",
+            "devicon-nodejs-plain colored"
+        ],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Todo List",
+        "description": "Simple Todo List mobile application created using React Native and Expo, written in Typescript and using SQLite for local data storage",
+        "link": "https://diakd0726.github.io/#/todo-list/",
+        "status": "",
+        "icons": [
+            "devicon-react-original colored",
+            "devicon-typescript-plain colored",
+            "devicon-sqlite-plain colored"
+        ],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Mobile Store",
+        "description": "Mobile application store to sell pc components. Users can login, browse categories and add to cart",
+        "link": "https://diakd0726.github.io/#/mobile-store/",
+        "status": "",
+        "icons": [
+            "devicon-java-plain colored",
+            "devicon-androidstudio-plain colored",
+            "devicon-firebase-plain colored"
+        ],
+        "button": "",
+        "style": "link"
+    },
+    {
+        "title": "Quick Draw",
+        "description": "Users can draw something based on a prompt and AI is used to interpret and make guesses on what the user is drawing",
+        "link": "https://diakd0726.github.io/#/quick-draw/",
+        "status": "",
+        "icons": ["devicon-java-plain colored"],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Blackjack",
+        "description": "Users can play blackjack against a bot, with different options for different strategies to play against",
+        "link": "https://diakd0726.github.io/#/blackjack/",
+        "status": "",
+        "icons": ["devicon-java-plain colored"],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Flappy Bird",
+        "description": "Flappy bird clone built using Unity and scripted with C#",
+        "link": "https://diakd0726.github.io/#/flappy-bird/",
+        "status": "",
+        "icons": ["devicon-unity-original", "devicon-csharp-plain colored"],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
+        "title": "Web Store",
+        "description": "Online store where users can login, browse, add to cart and purchase video games which are sent using phpmailer",
+        "link": "https://diakd0726.github.io/#/web-store/",
+        "status": "",
+        "icons": ["devicon-php-plain colored", "devicon-css3-plain colored"],
+        "button": "Repository",
+        "style": "link"
+    }
 ]
