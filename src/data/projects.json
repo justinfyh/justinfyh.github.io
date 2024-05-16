@@ -39,6 +39,19 @@
         "style": "link"
     },
     {
+        "title": "HealthyMeal",
+        "description": "Developed a web application that leverages generative AI to provide useful insights and meal plans for health conscious users",
+        "link": "https://healthy-meal.onrender.com/",
+        "status": "in development",
+        "icons": [
+            "devicon-html5-plain colored",
+            "devicon-css3-plain colored",
+            "devicon-javascript-plain colored"
+        ],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
         "title": "Live Chat App",
         "description": "A live chat application developed using MERN stack with user accounts and authentication",
         "link": "https://diakd0726.github.io/#/chat-app/",
