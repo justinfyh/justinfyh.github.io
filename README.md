@@ -22,7 +22,7 @@ npm (comes with Node.js)
 
 Clone the repository to your local machine:
 
-``git clone https://github.com/your-username/your-portfolio.git``
+``git clone https://github.com/justinfyh/justinfyh.github.io.git``
 
 Navigate to the project directory:
 
