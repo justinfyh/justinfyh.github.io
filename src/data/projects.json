@@ -13,6 +13,19 @@
         "style": "link"
     },
     {
+        "title": "Hangout",
+        "description": "Discover nearby events and easily coordinate friend hangouts with this application. A social media style app with its core focus being to bring people together and make it conveinient to schedule and plan events.",
+        "link": "https://github.com/justinfyh/justinfyh.github.io/blob/main/src/documents/hangout/README.md",
+        "status": "in development",
+        "icons": [
+            "devicon-html5-plain colored",
+            "devicon-css3-plain colored",
+            "devicon-javascript-plain colored"
+        ],
+        "button": "Repository",
+        "style": "link"
+    },
+    {
         "title": "Portfolio Website",
         "description": "This webpage, which is being developed using Astro framework and styled with Tailwindcss",
         "link": "https://github.com/justinfyh/justinfyh.github.io#readme",
