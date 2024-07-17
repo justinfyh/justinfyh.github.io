@@ -1,7 +1,7 @@
 [
     {
         "title": "WDCC Passport",
-        "description": "Developing a passport application for the WDCC club in a team of 10.",
+        "description": "Developing a passport application for the WDCC at UoA in a team of 10.",
         "link": "https://github.com/UoaWDCC/passport",
         "status": "in development",
         "icons": [
@@ -14,7 +14,7 @@
     },
     {
         "title": "ReStore",
-        "description": "A web application aimed at creating community led events whihc involve taking care of the environment and cleaning up beaches. Developed over one weekend as a part of the DEVS 2024 Hackathon.",
+        "description": "A web application aimed at creating community led events which involves taking care of the environment and cleaning up beaches. Developed over one weekend as a part of the DEVS 2024 Hackathon.",
         "link": "https://github.com/calebwharton/Braincells",
         "status": "in development",
         "icons": [
@@ -40,7 +40,7 @@
     },
     {
         "title": "Portfolio Website",
-        "description": "This webpage, which is being developed using Astro framework and styled with Tailwindcss",
+        "description": "This webpage, which was developed using the Astro framework and styled with Tailwindcss",
         "link": "https://github.com/justinfyh/justinfyh.github.io#readme",
         "status": "in development",
         "icons": [
