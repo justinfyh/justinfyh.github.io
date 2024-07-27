@@ -28,7 +28,7 @@
     {
         "title": "Hangout",
         "description": "Discover nearby events and easily coordinate friend hangouts with this application. A social media style app with its core focus being to bring people together and make it conveinient to schedule and plan events.",
-        "link": "https://github.com/justinfyh/justinfyh.github.io/blob/main/src/documents/hangout/README.md",
+        "link": "https://github.com/justinfyh/hangout",
         "status": "in development",
         "icons": [
             "devicon-html5-plain colored",
