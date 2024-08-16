@@ -1,46 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import ProjectCard from '../components/ProjectCard.astro';
-// import Portfolio from '../components/Portfolio.astro'
-// import Landing from '../components/Landing.astro';
-import Loading from '../components/Loading.astro';
-// import Skills from '../components/Skills.astro';
-// import About from '../components/About.astro';
-// import Sidebar from '../components/Sidebar.astro';
-// import TitleBox from '../components/TitleBox.astro';
-import Body from '../components/Body.astro';
-
-import projects from '../data/projects.json'
+import Landing from '../components/Landing.astro';
+import Projects from '../components/Projects.astro'
 ---
 
 <Layout>
-	<Loading/>
-	<main id="main-content" class="m-0 p-0 text-lg">
-		<Body/>
-
-		
-		<!-- <Sidebar/> -->
-		<!-- <Landing /> -->
-		<!-- <Portfolio /> -->
-		
-		<!-- render project cards -->
-		<!-- <div class="grid-container mx-auto mb-12">
-			{projects.map((project) => 
-				( <ProjectCard 
-					title={ project.title }
-					description= { project.description }
-					link={project.link}
-					status={ project.status }
-					icons={ project.icons }
-					button={ project.button }
-					style={ project.style }
-				/><hr class="border-1 border-slate-800"/>))
-				}
-		</div> -->
-
-		<!-- <Skills/>
-		<About/> -->
-	</main>
+	<Landing/>
+	<Projects/>
 </Layout>
 
 <style>
