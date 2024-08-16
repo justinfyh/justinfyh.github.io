@@ -1,59 +1,59 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Landing from '../components/Landing.astro';
-import Projects from '../components/Projects.astro'
+import Layout from "../layouts/Layout.astro";
+import Landing from "../components/Landing.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout>
-	<Landing/>
-	<Projects/>
+  <Landing />
+  <Projects />
 </Layout>
 
 <style>
-	main {
-		line-height: 1.6;
-	}
+  main {
+    line-height: 1.6;
+  }
 
-	/* style projects grid */
-	.grid-container {
-		width: 50%;
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-	}
+  /* style projects grid */
+  .grid-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-	.grid-container hr:last-child {
-		display: none;
-	}
+  .grid-container hr:last-child {
+    display: none;
+  }
 
-	@media  screen and (max-width: 770px) {
-      .grid-container {
-        width: 80%;
-      }     
+  @media screen and (max-width: 770px) {
+    .grid-container {
+      width: 80%;
     }
+  }
 
-	#main-content {
-		opacity: 0; /* Initially hide the main content */
-        transition: opacity 0.5s ease-in-out;
-	}
+  #main-content {
+    opacity: 0; /* Initially hide the main content */
+    transition: opacity 0.5s ease-in-out;
+  }
 </style>
 
 <script>
-	// Smooth scroll function
-	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-		anchor.addEventListener('click', function (e) {
-			e.preventDefault();
-			document.querySelector(this.getAttribute('href')).scrollIntoView({
-				behavior: 'smooth',
-			});
-		});
-	});
+  // Smooth scroll function
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
 
-	window.addEventListener("load", function () {
-        document.getElementById("loading-screen").style.opacity = "0";
-        document.getElementById("main-content").style.opacity = "100";
+  window.addEventListener("load", function () {
+    document.getElementById("loading-screen").style.opacity = "0";
+    document.getElementById("main-content").style.opacity = "100";
 
-	setTimeout(function () {
-		document.getElementById("loading-screen").style.display = "none";
-    }, 200); 
-});
+    setTimeout(function () {
+      document.getElementById("loading-screen").style.display = "none";
+    }, 200);
+  });
 </script>

@@ -1,60 +1,59 @@
 ---
 export interface Props {
-    title: string;
-    description: string;
-    link: string;
-    status?: string;
-    icons: string[];
-    button: string;
-    style: string;
+  title: string;
+  description: string;
+  link: string;
+  status?: string;
+  icons: string[];
+  button: string;
+  style: string;
 }
 
-const { title, description, link, status, icons, button, style } = Astro.props as Props;
+const { title, description, link, status, icons, button, style } =
+  Astro.props as Props;
 ---
 
-
 <div class="flex my-8">
-    
-    <div class="flex-1">
-        <p class="text-2xl mb-5">{ title } </p>
-        <!-- <span class="status-text">{ status }</span> -->
-        <p class="text-base leading-6">{ description }</p>
-    </div>
-    <div class="flex flex-col justify-around ml-8">
-        <!-- <a class={ style } href={ link } target="_blank">{ button }</a> -->
-        <a class={ style } href={ link } target="_blank">README.md</a>
-    </div>
+  <div class="flex-1">
+    <p class="text-2xl mb-5">{title}</p>
+    <!-- <span class="status-text">{ status }</span> -->
+    <p class="text-base leading-6">{description}</p>
+  </div>
+  <div class="flex flex-col justify-around ml-8">
+    <!-- <a class={ style } href={ link } target="_blank">{ button }</a> -->
+    <a class={style} href={link} target="_blank">README.md</a>
+  </div>
 </div>
 
 <style>
-    .link {
-        border: solid rgb(var(--accent));
-        border-radius: 10px;
-        border-width: 0.12em;
-        padding: 0.6em 1.4em;
-        font-size: 1rem;
-        color: rgb(var(--accent));
-        text-decoration: none;
-        font-weight: 500;
-        /* margin: 1em 0; */
-        display: inline-block;
-        transition: background-color 0.3s ease-in-out;
-    }
-    .link:hover {
-        cursor: pointer;
-        background-color: rgb(var(--accent));
-        color: var(--secondary);
-    }
+  .link {
+    border: solid rgb(var(--accent));
+    border-radius: 10px;
+    border-width: 0.12em;
+    padding: 0.6em 1.4em;
+    font-size: 1rem;
+    color: rgb(var(--accent));
+    text-decoration: none;
+    font-weight: 500;
+    /* margin: 1em 0; */
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .link:hover {
+    cursor: pointer;
+    background-color: rgb(var(--accent));
+    color: var(--secondary);
+  }
 
-    .link-d {
-        border-width: 0.12em;
-        padding: 0.6em 1.4em;
-        font-size: 1rem;
-        color: rgb(var(--accent));
-        text-decoration: none;
-        font-weight: 500;
-        margin: 1em 0;
-        display: inline-block;
-        transition: background-color 0.3s ease-in-out;
-    }
+  .link-d {
+    border-width: 0.12em;
+    padding: 0.6em 1.4em;
+    font-size: 1rem;
+    color: rgb(var(--accent));
+    text-decoration: none;
+    font-weight: 500;
+    margin: 1em 0;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
 </style>

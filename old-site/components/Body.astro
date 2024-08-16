@@ -1,48 +1,46 @@
 ---
 import TitleBox from "./TitleBox.astro";
 import LinkBox from "./LinkBox.astro";
-import AlbumBox from "./AlbumBox.astro"
-import ProjectBox from "./ProjectBox.astro"
+import AlbumBox from "./AlbumBox.astro";
+import ProjectBox from "./ProjectBox.astro";
 import SkillBox from "./SkillBox.astro";
 import AboutBox from "./AboutBox.astro";
-import FooterBox from "./FooterBox.astro"
+import FooterBox from "./FooterBox.astro";
 ---
 
 <script>
-    let selectedComponent = 'projects';
+  let selectedComponent = "projects";
 
-    const projectsButton = document.getElementById("project");
-    projectsButton.addEventListener('click', () => {
-        changeComponent("projects");
-      });
+  const projectsButton = document.getElementById("project");
+  projectsButton.addEventListener("click", () => {
+    changeComponent("projects");
+  });
 
-    const skillsButton = document.getElementById("skill");
-    skillsButton.addEventListener('click', () => {
+  const skillsButton = document.getElementById("skill");
+  skillsButton.addEventListener("click", () => {
+    changeComponent("skills");
+  });
 
-        changeComponent("skills");
-      });
+  const aboutButton = document.getElementById("about");
+  aboutButton.addEventListener("click", () => {
+    changeComponent("skills");
+  });
 
-const aboutButton = document.getElementById("about");
-    aboutButton.addEventListener('click', () => {
-        changeComponent("skills");
-      });
-
-    function changeComponent(component)  {
-      selectedComponent = component;
-    };
+  function changeComponent(component) {
+    selectedComponent = component;
+  }
 </script>
 
 <div class="bg-background text-white w-screen h-screen py-10">
-    <div class="w-5/6 h-full mx-auto grid grid-cols-10 gap-2">
-
-        <TitleBox/>
-        <LinkBox/>
-        <AlbumBox/>
-        <div class="col-span-8 overflow-y-auto">
-            <ProjectBox/>
-            <SkillBox/>
-            <AboutBox/>
-        </div>
-        <FooterBox/>
+  <div class="w-5/6 h-full mx-auto grid grid-cols-10 gap-2">
+    <TitleBox />
+    <LinkBox />
+    <AlbumBox />
+    <div class="col-span-8 overflow-y-auto">
+      <ProjectBox />
+      <SkillBox />
+      <AboutBox />
     </div>
+    <FooterBox />
+  </div>
 </div>

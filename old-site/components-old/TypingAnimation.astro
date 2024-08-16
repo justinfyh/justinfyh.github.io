@@ -1,12 +1,14 @@
 ---
 export interface Props {
-    text:string;
+  text: string;
 }
 
 const { text } = Astro.props as Props;
 ---
 
-<div id="typing" class="typing-container overflow-hidden whitespace-nowrap"><h1 class="text-5xl m-0 leading-tight">{text}</h1></div>
+<div id="typing" class="typing-container overflow-hidden whitespace-nowrap">
+  <h1 class="text-5xl m-0 leading-tight">{text}</h1>
+</div>
 
 <style>
   .typing-container {
@@ -27,40 +29,40 @@ const { text } = Astro.props as Props;
     }
   }
 
-  @media  screen and (max-width: 770px) {
-      h1 {
-        text-wrap: wrap;
-      }     
+  @media screen and (max-width: 770px) {
+    h1 {
+      text-wrap: wrap;
     }
+  }
 </style>
 
 <script>
   // Function to handle the intersection observer callback
   function handleIntersection(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Add the changed class when the element is in view
-          targetElement.classList.add('animation');
-        } else {
-          // Remove the changed class when the element is out of view
-          targetElement.classList.remove('animation');
-        }
-      });
-    }
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add the changed class when the element is in view
+        targetElement.classList.add("animation");
+      } else {
+        // Remove the changed class when the element is out of view
+        targetElement.classList.remove("animation");
+      }
+    });
+  }
 
-    // Target element
-    const targetElement = document.getElementById('typing');
+  // Target element
+  const targetElement = document.getElementById("typing");
 
-    // Options for the Intersection Observer
-    const options = {
-      root: null, // use the viewport as the root
-      rootMargin: '0px', // no margin
-      threshold: 0.5, // trigger when 50% of the element is visible
-    };
+  // Options for the Intersection Observer
+  const options = {
+    root: null, // use the viewport as the root
+    rootMargin: "0px", // no margin
+    threshold: 0.5, // trigger when 50% of the element is visible
+  };
 
-    // Create an Intersection Observer
-    const observer = new IntersectionObserver(handleIntersection, options);
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver(handleIntersection, options);
 
-    // Start observing the target element
-    observer.observe(targetElement);
+  // Start observing the target element
+  observer.observe(targetElement);
 </script>
