@@ -1,0 +1,49 @@
+---
+import Header from "./Header.astro";
+import Introduction from "./Introduction.astro";
+import down from "../images/down-arrow.png";
+---
+
+<section id="section1" class="">
+  <div class="overlay bg-slate-800 w-full">
+    <div class="tint h-screen w-1/2 m-auto flex items-center justify-center">
+      <div class="header-container top-0 absolute"><Header /></div>
+      <div class="w-full">
+        <div class="content text-white"><Introduction /></div>
+      </div>
+      <div class="scroll absolute cursor-pointer">
+        <a class="no-underline text-white" href="#section2"
+          ><img src={down.src} alt="" /></a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .overlay {
+    height: 100svh;
+  }
+
+  .scroll {
+    bottom: 1em;
+    padding: 1em 1.2em;
+  }
+
+  .scroll img {
+    margin: 0;
+    height: 2.5em;
+    transition: height 0.1s ease-in-out;
+  }
+
+  .scroll img:hover {
+    height: 3em;
+    transition: height 0.1s ease-in-out;
+  }
+
+  @media (max-width: 400px) {
+    .scroll {
+      bottom: 3em;
+    }
+  }
+</style>

@@ -1,0 +1,25 @@
+---
+import TypingAnimation from "./TypingAnimation.astro";
+---
+
+<div class="text-left">
+  <h1 class="text-5xl p-0 my-0">Justin Huang.</h1>
+  <TypingAnimation text="Software Engineer." />
+</div>
+
+<style>
+  div {
+    width: 21em;
+    margin-bottom: 2em;
+  }
+
+  div h1 {
+    line-height: 1.2em;
+  }
+
+  @media screen and (max-width: 770px) {
+    div {
+      width: fit-content;
+    }
+  }
+</style>

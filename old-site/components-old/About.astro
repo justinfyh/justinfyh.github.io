@@ -1,0 +1,91 @@
+---
+import resume from "../documents/justinhuang.pdf";
+---
+
+<section id="section4" class="text-white py-20">
+  <div class="w-1/2 m-auto mb-4">
+    <div class="w-fit mr-auto mb-8 text-black">
+      <div
+        id="typing3"
+        class="typing-container overflow-hidden whitespace-nowrap"
+      >
+        <h1 class="text-5xl m-0 leading-10">About Me</h1>
+      </div>
+    </div>
+    <p class="text-black mb-16">
+      I am currently a Software Engineering Student studying at the University
+      of Auckland based in New Zealand. I am passionate about software
+      development and always looking to learn more and improve my skillset. I
+      enjoy developing all sorts of technologies and applications to solve
+      problems and create products. I want to be working in a role where I know
+      I am going to be challenged and learning every day, allowing for my
+      ambition to drive innovative ideas.
+    </p>
+    <a
+      class="border-indigo-700 border-solid border-2 rounded-xl p-4 text-indigo-700 hover:text-white hover:bg-indigo-700"
+      href={resume}
+      download>resume.pdf</a
+    >
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--main);
+  }
+
+  a {
+    transition: background 0.5s;
+  }
+</style>
+
+<style>
+  .typing-container {
+    border-right: 0.2em solid #000;
+  }
+
+  .animation {
+    animation: typing-animation 1s steps(10) forwards;
+  }
+
+  @keyframes typing-animation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+      border-color: transparent;
+    }
+  }
+</style>
+
+<script>
+  // Function to handle the intersection observer callback
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add the changed class when the element is in view
+        targetElement.classList.add("animation");
+      } else {
+        // Remove the changed class when the element is out of view
+        targetElement.classList.remove("animation");
+      }
+    });
+  }
+
+  // Target element
+  const targetElement = document.getElementById("typing3");
+
+  // Options for the Intersection Observer
+  const options = {
+    root: null, // use the viewport as the root
+    rootMargin: "0px", // no margin
+    threshold: 0.5, // trigger when 50% of the element is visible
+  };
+
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  // Start observing the target element
+  observer.observe(targetElement);
+</script>

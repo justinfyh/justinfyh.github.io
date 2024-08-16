@@ -1,58 +1,18 @@
 ---
 export interface Props {
-    title: string;
-    description: string;
-    link: string;
-    status?: string;
-    icons: string[];
-    button: string;
-    style: string;
+  title: string;
+  description: string;
+  link: string;
+  status?: string;
+  icons: string[];
+  button: string;
+  style: string;
 }
 
-const { title, description, link, status, icons, button, style } = Astro.props as Props;
+const { title, description, link, status, icons, button, style } =
+  Astro.props as Props;
 ---
 
+<div class=""></div>
 
-<div class="grid grid-cols-10 my-2 items-center">
-    
-    <div class="col-span-6">
-        <p class="text-base font-semibold">{ title } </p>
-        <p class="text-sm ">{ description }</p>
-    </div>
-    <div class="col-span-1 justify-around ml-14">
-        <a class={ style } href={ link } target="_blank">README.md</a>
-    </div>
-</div>
-
-<style>
-    .link {
-        border: solid #1db954;
-        border-radius: 10px;
-        border-width: 0.12em;
-        padding: 0.6em 1.4em;
-        font-size: 1rem;
-        color: #1db954;
-        text-decoration: none;
-        font-weight: 500;
-        /* margin: 1em 0; */
-        display: inline-block;
-        transition: background-color 0.3s ease-in-out;
-    }
-    .link:hover {
-        cursor: pointer;
-        background-color: #1db954;
-        color: white;
-    }
-
-    .link-d {
-        border-width: 0.12em;
-        padding: 0.6em 1.4em;
-        font-size: 1rem;
-        color: rgb(var(--accent));
-        text-decoration: none;
-        font-weight: 500;
-        margin: 1em 0;
-        display: inline-block;
-        transition: background-color 0.3s ease-in-out;
-    }
-</style>
+<style></style>

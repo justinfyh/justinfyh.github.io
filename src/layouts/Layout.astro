@@ -1,140 +1,149 @@
 ---
-import Footer from '../components/Footer.astro';
-// import ResumeCard from '../components/ResumeCard.astro';
+
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/icon.png" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-		<title>Justin Huang | Portfolio</title>
-	</head>
-	<body>
-		<slot />
-		<!-- <ResumeCard /> -->
-		<!-- <Footer /> -->
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <title>Justin Huang | Portfolio</title>
+  </head>
+  <body class="text-white bg-background">
+    <slot />
+  </body>
 </html>
+
 <style is:global>
-	:root {
-		--main: #f0f0f0;
-		--secondary: white;
-		--text: black;
-		--shadow: #525252;
-		--image-filter: invert(100%);
-		--tint: rgba(255, 255, 255, 0.1);
+  :root {
+    --main: #f0f0f0;
+    --secondary: white;
+    --text: black;
+    --shadow: #525252;
+    --image-filter: invert(100%);
+    --tint: rgba(255, 255, 255, 0.1);
 
-		--accent: 79, 70, 229;  /* Slate Blue */
-		--accent-light: 173, 216, 230;  /* Light Blue */
-		--accent-dark: 70, 130, 180;  /* Steel Blue */
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
---tw-bg-opacity: 1;
-		--gradient: linear-gradient(
-			0,
-			 
-    		rgb(30 41 59 / var(--tw-bg-opacity)) 0%,
-			rgb(30 41 59 / var(--tw-bg-opacity)) 50%,
-			var(--main) 50%,
-			var(--main) 100%
-		);
-	}
-	:root.dark {
-		--main: #13151a;
-		--secondary: #1d1f26;
-		--text: white;
-		--shadow: #ebebeb;
-		--image-filter: unset;
-		--tint: rgba(0, 0, 0, 0.3);
+    --accent: 79, 70, 229; /* Slate Blue */
+    --accent-light: 173, 216, 230; /* Light Blue */
+    --accent-dark: 70, 130, 180; /* Steel Blue */
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+    --tw-bg-opacity: 1;
+    --gradient: linear-gradient(
+      0,
+      rgb(30 41 59 / var(--tw-bg-opacity)) 0%,
+      rgb(30 41 59 / var(--tw-bg-opacity)) 50%,
+      var(--main) 50%,
+      var(--main) 100%
+    );
+  }
+  :root.dark {
+    --main: #13151a;
+    --secondary: #1d1f26;
+    --text: white;
+    --shadow: #ebebeb;
+    --image-filter: unset;
+    --tint: rgba(0, 0, 0, 0.3);
 
-		--accent: 65, 105, 200;        /* Adjusted Royal Blue */
---accent-light: 120, 150, 255; /* Lightened Royal Blue */
---accent-dark: 20, 70, 160;    /* Darkened Royal Blue */
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
+    --accent: 65, 105, 200; /* Adjusted Royal Blue */
+    --accent-light: 120, 150, 255; /* Lightened Royal Blue */
+    --accent-dark: 20, 70, 160; /* Darkened Royal Blue */
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
 
-	/* Styling scrollbar */
-	::-webkit-scrollbar {
-		width: 15px; 
-	}
+  /* Styling scrollbar */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
 
-	::-webkit-scrollbar-track {
-		background: var(--secondary);
-		border-top-right-radius: 8px;
-		border-bottom-right-radius: 8px;
+  ::-webkit-scrollbar-track {
+    background: var(--secondary);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 
-	}
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--shadow);
+    border-radius: 10px;
+    border: 4px solid var(--secondary);
+  }
 
-	::-webkit-scrollbar-thumb {
-		background-color: var(--shadow); 
-		border-radius: 10px;
-		border: 4px solid var(--secondary); 
-	}
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text);
+  }
 
-	::-webkit-scrollbar-thumb:hover {
-		background-color: var(--text); 
-	}
+  html {
+    font-family: system-ui, sans-serif;
+    background: var(--main);
+    transition: background 0.2s ease-in-out;
+  }
+  html.dark {
+    color: white;
+  }
 
-	html {
-		font-family: system-ui, sans-serif;
-		background: var(--main);
-		transition: background 0.2s ease-in-out;
-	}
-	html.dark {
-		color: white;
-	}
+  a {
+    text-decoration: none;
+  }
 
-	a {
-		text-decoration: none;
-	}
-
-	* {
+  * {
     /* outline: solid 1px red; */
-}
+  }
 
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
 
-	@font-face {
-	font-family: 'Mona Sans';
-	src:
-		url('Mona-Sans.woff2') format('woff2 supports variations'),
-		url('Mona-Sans.woff2') format('woff2-variations');
-	font-weight: 200 900;
-	font-stretch: 75% 125%; 
-	}
+  @font-face {
+    font-family: "Mona Sans";
+    src:
+      url("Mona-Sans.woff2") format("woff2 supports variations"),
+      url("Mona-Sans.woff2") format("woff2-variations");
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
 
-	body {
-		margin: 0;
-		font-family: 'Mona Sans', sans-serif, 'Inter', sans-serif, 'Raleway', sans-serif, 'Lato', sans-serif;
-		user-select: none;
-    	-webkit-tap-highlight-color: transparent;
-	}
+  body {
+    margin: 0;
+    font-family: "Mona Sans", sans-serif, "Inter", sans-serif, "Raleway",
+      sans-serif, "Lato", sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
 </style>

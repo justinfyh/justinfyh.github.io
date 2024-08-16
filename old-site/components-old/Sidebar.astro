@@ -1,0 +1,38 @@
+<astro-sidebar class="text-white fixed top-0 right-0 box-border text-right">
+  <nav id="sidebar" class="p-3 rounded-lg bg-slate-800">
+    <ul class="list-none p-0">
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section2">Portfolio</a></li>
+      <li><a href="#section3">Skills</a></li>
+      <li><a href="#section4">About</a></li>
+    </ul>
+  </nav>
+</astro-sidebar>
+
+<style>
+  astro-sidebar {
+    width: 170px;
+    height: 20vh;
+    padding: 30px;
+  }
+
+  nav {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a:hover {
+    color: rgb(79 70 229);
+  }
+
+  @media screen and (max-width: 770px) {
+    astro-sidebar {
+      display: none;
+      visibility: hidden;
+    }
+  }
+</style>

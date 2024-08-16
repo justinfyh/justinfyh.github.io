@@ -22,21 +22,21 @@ npm (comes with Node.js)
 
 Clone the repository to your local machine:
 
-``git clone https://github.com/justinfyh/justinfyh.github.io.git``
+`git clone https://github.com/justinfyh/justinfyh.github.io.git`
 
 Navigate to the project directory:
 
-``cd [project-folder]``
+`cd [project-folder]`
 
 Install the project dependencies:
 
-``npm install``
+`npm install`
 
 ## Running the Development Server
 
 To run the portfolio website locally and make changes:
 
-``npm run dev``
+`npm run dev`
 
 This command will start the development server, and you can view the site at http://localhost:3000 in your web browser.
 
