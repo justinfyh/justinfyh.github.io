@@ -12,12 +12,12 @@ import restore1 from "../images/screenshots/restore1.png";
 import Button from "./Button.astro";
 ---
 
-<div class="px-20 w-full">
-  <p class="font-bold text-5xl mb-12">projects</p>
-  <div class="flex mb-32">
-    <div class="w-1/2 mr-6">
+<div class="px-8 sm:px-20 w-full">
+  <p class="font-bold text-4xl sm:text-5xl mb-12">projects</p>
+  <div class="flex flex-col sm:flex-row mb-12 sm:mb-32">
+    <div class="sm:w-1/2 sm:mr-6">
       <div class="flex items-center justify-between mb-4">
-        <p class="font-bold text-3xl">/wdcc-passport</p>
+        <p class="font-bold text-2xl sm:text-3xl">/wdcc-passport</p>
         <a href="https://github.com/UoaWDCC/passport" target="_blank"
           ><Button /></a
         >
@@ -28,16 +28,16 @@ import Button from "./Button.astro";
         <img class="rounded-xl w-1/3" src={wdcc3.src} alt="" />
       </div>
       <div class="mt-6">
-        <p class="font-medium text-2xl">
+        <p class="font-medium text-xl sm:text-2xl">
           MERN stack web application for the top student-led tech club in New
           Zealand
         </p>
       </div>
     </div>
 
-    <div class="w-1/2 ml-6">
+    <div class="sm:w-1/2 sm:ml-6 mt-12 sm:mt-0">
       <div class="flex items-center justify-between mb-4">
-        <p class="font-bold text-3xl">/hangout</p>
+        <p class="font-bold text-2xl sm:text-3xl">/hangout</p>
         <a href="https://github.com/justinfyh/hangout" target="_blank"
           ><Button /></a
         >
@@ -48,7 +48,7 @@ import Button from "./Button.astro";
         <img class="rounded-xl w-1/3" src={hangout3.src} alt="" />
       </div>
       <div class="mt-6">
-        <p class="font-medium text-2xl">
+        <p class="font-medium text-xl sm:text-2xl">
           Cross platform social media style mobile application
         </p>
       </div>
@@ -56,18 +56,18 @@ import Button from "./Button.astro";
   </div>
 
   <div class="">
-    <div class="flex justify-center">
-      <div class="flex flex-col mr-6">
-        <p class="font-bold text-3xl mb-2">/restore</p>
+    <div class="flex flex-col sm:flex-row justify-center">
+      <div class="flex sm:flex-col sm:mr-6 mb-4 sm:mb-0 items-center justify-between sm:justify-normal">
+        <p class="font-bold text-2xl sm:text-3xl mb-2">/restore</p>
         <a href="https://github.com/calebwharton/Restore" target="_blank"
           ><Button /></a
         >
       </div>
-      <div class="w-1/2">
+      <div class="sm:w-1/2">
         <img class="rounded-xl" src={restore1.src} alt="" />
       </div>
-      <div class="ml-6 w-1/6">
-        <p class="font-medium text-2xl">
+      <div class="sm:ml-6 mt-6 sm:mt-0 sm:w-1/6">
+        <p class="font-medium text-xl sm:text-2xl">
           Humanitarian focused web application developed for DEVS Hackathon
           2024, presented with Honourable Mention
         </p>
